@@ -9,7 +9,7 @@ from .entity_resolution import BasicEntityResolver
 from .update_policy import apply_fact
 from .graph_store import TemporalGraphStore
 
-resolver = BasicEntityResolver()
+resolver = BasicEntityResolver() 
 
 MAX_CHUNK_CHARS = 12000  # real MeetingBank transcripts run ~28k tokens; chunk to stay well within one call
 
