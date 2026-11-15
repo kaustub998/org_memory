@@ -1,0 +1,3523 @@
+{
+  "nodes": [
+    {
+      "id": "entity_cb325154",
+      "canonical_name": "Councilwoman Gilmore",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_9e5e9311",
+      "canonical_name": "President Brooks",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_ebe4087a",
+      "canonical_name": "Councilman Clark",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_65e826a8",
+      "canonical_name": "Mr. President",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_3eef1b64",
+      "canonical_name": "Madam Secretary Rocha",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_5e7af8a8",
+      "canonical_name": "Karen Champagne",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_319969f0",
+      "canonical_name": "Jeff Hertz",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_23adff48",
+      "canonical_name": "Tina Axelrod",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_5255002f",
+      "canonical_name": "CPD",
+      "entity_type": "DEPARTMENT",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_0b379fde",
+      "canonical_name": "Denver Zoning Code",
+      "entity_type": "POLICY",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_4cdbf95a",
+      "canonical_name": "Council Bill 161",
+      "entity_type": "PROJECT",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_333bb410",
+      "canonical_name": "Council Bill 17 0311",
+      "entity_type": "PROJECT",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_3445bcfb",
+      "canonical_name": "Councilman Brooks",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_9df64dbb",
+      "canonical_name": "Margie Valdez",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_2f8ef1e2",
+      "canonical_name": "Inter Neighborhood Cooperation",
+      "entity_type": "ORGANIZATION",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_2b6ea7a4",
+      "canonical_name": "KPD Development Services",
+      "entity_type": "DEPARTMENT",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_adc6f01e",
+      "canonical_name": "Denver",
+      "entity_type": "ORGANIZATION",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_db0ee105",
+      "canonical_name": "George Male",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_baa9cd4e",
+      "canonical_name": "Joe Berrios",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_567350af",
+      "canonical_name": "Sharon Nunnally",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_b832aad8",
+      "canonical_name": "Ben Gerhart",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_0debb2d5",
+      "canonical_name": "Craig Damon",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_d815d8c8",
+      "canonical_name": "Charlie Bosch",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_db5b735f",
+      "canonical_name": "Mrs. Bush",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_f2022dd2",
+      "canonical_name": "Gertrude O'Grady Grant",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_cecaeec0",
+      "canonical_name": "West Washington Park Neighborhood Association",
+      "entity_type": "ORGANIZATION",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_a8f81cad",
+      "canonical_name": "Bob Hickman",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_c7278e4a",
+      "canonical_name": "John Joseph Neiman",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_c79d37d0",
+      "canonical_name": "Tricia Huth",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_db9181bc",
+      "canonical_name": "Joseph Coppola",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_45f54302",
+      "canonical_name": "Chip Coppola",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_9451fdea",
+      "canonical_name": "Cindy Patton",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_73ac796e",
+      "canonical_name": "James Davis",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_5e83afb7",
+      "canonical_name": "Kendra",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_d74c3432",
+      "canonical_name": "Paul Davidson",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_d2830cd6",
+      "canonical_name": "Sue Glassmaker",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_ec13c524",
+      "canonical_name": "Eileen Feldman",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_aafcd37c",
+      "canonical_name": "Barbara Stockland Staley",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_355a7ebe",
+      "canonical_name": "Doug Geddes",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_9d031191",
+      "canonical_name": "Obama administration",
+      "entity_type": "ORGANIZATION",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_16a0b6a9",
+      "canonical_name": "Urban Land Institute",
+      "entity_type": "ORGANIZATION",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_2c137733",
+      "canonical_name": "Barbara Stockman",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_9296ee18",
+      "canonical_name": "Goddess",
+      "entity_type": "ORGANIZATION",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_89b52a34",
+      "canonical_name": "D Line",
+      "entity_type": "PROJECT",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_482f1eb0",
+      "canonical_name": "Councilmember Clarke",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_1541ee8b",
+      "canonical_name": "Curtis Park",
+      "entity_type": "DEPARTMENT",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_0fb53564",
+      "canonical_name": "Keith Pryor",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_4fdaf271",
+      "canonical_name": "John Hagan",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_e9e0443e",
+      "canonical_name": "Brooks Bill",
+      "entity_type": "POLICY",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_ffaf3f3c",
+      "canonical_name": "Brooks",
+      "entity_type": "PERSON",
+      "aliases": [
+        "Brooks. Brooks Brooks. Clarke. Bill"
+      ],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_295efae0",
+      "canonical_name": "Jeff",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_94cc5af9",
+      "canonical_name": "Tina",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_96e80a1e",
+      "canonical_name": "Cindy Pat",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_11e3d4a9",
+      "canonical_name": "Gaby",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_8f246002",
+      "canonical_name": "Councilman Espinosa",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_417af916",
+      "canonical_name": "Councilwoman Sussman",
+      "entity_type": "PERSON",
+      "aliases": [
+        "Councilwoman Sussman's actions"
+      ],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_0467f4a9",
+      "canonical_name": "Joel Noble",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_296fe80b",
+      "canonical_name": "Denver Planning Board",
+      "entity_type": "ORGANIZATION",
+      "aliases": [
+        "Denver Planning Board bylaws"
+      ],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_3b44d9e7",
+      "canonical_name": "Councilwoman Madison",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_6059434d",
+      "canonical_name": "Ken Triple A",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_0c7acbbf",
+      "canonical_name": "Citywide policy",
+      "entity_type": "POLICY",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_9520614c",
+      "canonical_name": "Blueprint Denver",
+      "entity_type": "POLICY",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_140abf78",
+      "canonical_name": "Mr. Hickman",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_46c8ec7c",
+      "canonical_name": "Mr. Hill",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_35466635",
+      "canonical_name": "Councilwoman",
+      "entity_type": "ROLE",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_bc19a162",
+      "canonical_name": "Councilman Lopez",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_df806efd",
+      "canonical_name": "Councilman Hurd",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_b96023b5",
+      "canonical_name": "President",
+      "entity_type": "ROLE",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_f344b7af",
+      "canonical_name": "Paul Cashman",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_9c5c815c",
+      "canonical_name": "Cindy",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_41f84bc0",
+      "canonical_name": "Joel",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_bf6e76c0",
+      "canonical_name": "Councilman Cashman",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_a4e8adda",
+      "canonical_name": "Councilwoman Espinosa",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_b18fdb4e",
+      "canonical_name": "Councilman Cash",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_a37b807f",
+      "canonical_name": "Councilman Neal",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_03edb533",
+      "canonical_name": "City Pan",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_1fa20eba",
+      "canonical_name": "Councilman Sessions",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_83b22051",
+      "canonical_name": "Councilwoman Ortega",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_28515686",
+      "canonical_name": "RTD",
+      "entity_type": "ORGANIZATION",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_4c0b998c",
+      "canonical_name": "Councilwoman Black",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_6456d02f",
+      "canonical_name": "John Hayden",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_fdd7ed80",
+      "canonical_name": "Dolan's bill",
+      "entity_type": "PROJECT",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_98f14d28",
+      "canonical_name": "Councilman Susman",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_f1a267b3",
+      "canonical_name": "Sue Glass Maker",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_fc8f6454",
+      "canonical_name": "Councilman Flynn",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_43fd977e",
+      "canonical_name": "Councilman Gilmore",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_e21faf66",
+      "canonical_name": "Councilman Clarke",
+      "entity_type": "PERSON",
+      "aliases": [
+        "Councilman Clarke's amendment"
+      ],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_818a3cd9",
+      "canonical_name": "Councilwoman Jeanie Robb",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_85e99e93",
+      "canonical_name": "Ryan Winsberg",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_c7533b3c",
+      "canonical_name": "George Mail",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_b87cb638",
+      "canonical_name": "HUD",
+      "entity_type": "ORGANIZATION",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-02"
+    },
+    {
+      "id": "entity_198bbe31",
+      "canonical_name": "Madam Secretary",
+      "entity_type": "ROLE",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_5649efc0",
+      "canonical_name": "David Bravo",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_1f3e9a5f",
+      "canonical_name": "Councilman Ortega",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_24ca33d8",
+      "canonical_name": "Council Bill 153",
+      "entity_type": "PROJECT",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_8622dede",
+      "canonical_name": "Council Bill 277",
+      "entity_type": "PROJECT",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_d22715a6",
+      "canonical_name": "Councilman New",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_90aa0792",
+      "canonical_name": "Council Bill 3.7",
+      "entity_type": "POLICY",
+      "aliases": [
+        "Council",
+        "council"
+      ],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_cfd4dd36",
+      "canonical_name": "Council Bill 285",
+      "entity_type": "POLICY",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_e2c2b17c",
+      "canonical_name": "Councilman Herndon",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_0ed15cbb",
+      "canonical_name": "Jeff Hart",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_6c85a1b9",
+      "canonical_name": "Adam Hernandez",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_6e5dde78",
+      "canonical_name": "David Broadwell",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_03cbcb20",
+      "canonical_name": "Sarah Showalter",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_9002cb8f",
+      "canonical_name": "Councilman Black",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_ebeaee50",
+      "canonical_name": "Mayor's office",
+      "entity_type": "ORGANIZATION",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_c1aff8dc",
+      "canonical_name": "planning board",
+      "entity_type": "DEPARTMENT",
+      "aliases": [
+        "Planning Board Process"
+      ],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_89e96204",
+      "canonical_name": "city council",
+      "entity_type": "DEPARTMENT",
+      "aliases": [
+        "the City Council"
+      ],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-03"
+    },
+    {
+      "id": "entity_1c7ce711",
+      "canonical_name": "Council District nine",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_61ae1612",
+      "canonical_name": "Humble Project 16th in Humboldt",
+      "entity_type": "PROJECT",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_f0ddbe87",
+      "canonical_name": "Councilwoman Kinch",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_7e8c1278",
+      "canonical_name": "Madam Secretary King",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_2cec9ac3",
+      "canonical_name": "Sussan",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_b6389b15",
+      "canonical_name": "Councilwoman Canete",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_52e65d5e",
+      "canonical_name": "Mr. Hurd",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_d98b5b8c",
+      "canonical_name": "final consideration and do pass",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_b78097c3",
+      "canonical_name": "amendment to the zoning code",
+      "entity_type": "OTHER",
+      "aliases": [
+        "amendment added to the zoning code"
+      ],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_e082c44b",
+      "canonical_name": "denial of the text amendment",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_faf4e2f9",
+      "canonical_name": "open for public hearing",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_325cf516",
+      "canonical_name": "zoning code reference",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_f37f19e4",
+      "canonical_name": "denial of the bill",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_dc7fb2ce",
+      "canonical_name": "prior bill",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_455335b6",
+      "canonical_name": "Bill 17 161",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_3d9e0b5b",
+      "canonical_name": "preference for less driving and more walkability",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_f2fa1d6c",
+      "canonical_name": "protection of residential neighborhoods and smart development",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_3a2b95a3",
+      "canonical_name": "citizens of Denver",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_cf48aa0d",
+      "canonical_name": "support",
+      "entity_type": "OTHER",
+      "aliases": [
+        "not support"
+      ],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_b74f1c5d",
+      "canonical_name": "Uptown Urban Design Forum",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_0508a794",
+      "canonical_name": "Kaiser Permanente",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_b3a795c2",
+      "canonical_name": "small text amendments",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_31022b60",
+      "canonical_name": "support the compromise ordinance",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_9895b9b6",
+      "canonical_name": "the bill",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_98700431",
+      "canonical_name": "the process",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_ffba2127",
+      "canonical_name": "parking data",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_8146e323",
+      "canonical_name": "steering committee",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_6b2a69bb",
+      "canonical_name": "two year process",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_a1663326",
+      "canonical_name": "working poor",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_6176aa09",
+      "canonical_name": "off street parking requirements",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_21ca96f6",
+      "canonical_name": "increased costs of housing",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_c6dd339e",
+      "canonical_name": "parking requirements",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_fb4d33a6",
+      "canonical_name": "less affordable housing",
+      "entity_type": "OTHER",
+      "aliases": [
+        "affordable housing"
+      ],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_09e140d4",
+      "canonical_name": "not ready for parking exemptions",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_00da9b5b",
+      "canonical_name": "zone lot parking exemption amendment",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_bdbe4569",
+      "canonical_name": "opposed to the bill",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_091d967b",
+      "canonical_name": "technical lens",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_65645dda",
+      "canonical_name": "parking proposal",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_9837d583",
+      "canonical_name": "not zero",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_856960f1",
+      "canonical_name": "compromise",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_bbf3ac60",
+      "canonical_name": "BRT",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_4f7e559f",
+      "canonical_name": "funded for design",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_d9d6dfe9",
+      "canonical_name": "Colfax",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_e96b2204",
+      "canonical_name": "BRT plans",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_ec068121",
+      "canonical_name": "Committee",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_18c1eb39",
+      "canonical_name": "not speaking on behalf",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_ee82d47b",
+      "canonical_name": "staff",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_7f7916cf",
+      "canonical_name": "reviewing task force recommendation",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_69ea0783",
+      "canonical_name": "criteria",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_7e31dd73",
+      "canonical_name": "consistent with adopted plans",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_242116dd",
+      "canonical_name": "should decrease",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_66d5093b",
+      "canonical_name": "geo open transportation and mobility meetings",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_2f37a25a",
+      "canonical_name": "the conversation",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_d6ba9760",
+      "canonical_name": "subject to Chapter 59 zoning regulations",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_67a7b0e5",
+      "canonical_name": "this amendment",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_5b92bf69",
+      "canonical_name": "city staff as competent",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_6f8691ae",
+      "canonical_name": "council colleagues as collegial",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_a9722bf0",
+      "canonical_name": "the process is complicated",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_a62e6153",
+      "canonical_name": "stay on the transit corridor",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_5975d66a",
+      "canonical_name": "sausage",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_98a28435",
+      "canonical_name": "transportation plan",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_67194433",
+      "canonical_name": "community process",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_1897c8ff",
+      "canonical_name": "discounted bus pass",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_93d3fdb0",
+      "canonical_name": "mediocre bill",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_7c780afb",
+      "canonical_name": "increased mobility and transportation",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_dc36d008",
+      "canonical_name": "urban design deal",
+      "entity_type": "OTHER",
+      "aliases": [
+        "urban design"
+      ],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_f42deb2c",
+      "canonical_name": "passed",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_766323b2",
+      "canonical_name": "amended",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_34dc2361",
+      "canonical_name": "final consideration",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_dda19eef",
+      "canonical_name": "amendment",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_fcca9d41",
+      "canonical_name": "posting rules",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_8397acdd",
+      "canonical_name": "failed",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_f76fac66",
+      "canonical_name": "resolutions",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_64235ecb",
+      "canonical_name": "adopted",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_600ec973",
+      "canonical_name": "held in committee",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_983463d6",
+      "canonical_name": "voted on in a block",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_a51c3328",
+      "canonical_name": "ordered publish",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_6a11aa37",
+      "canonical_name": "postponed",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_6c5e6b98",
+      "canonical_name": "published",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_9c894187",
+      "canonical_name": "technical clarification",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_93e8d3b5",
+      "canonical_name": "two year effort",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_4f6f30fa",
+      "canonical_name": "transportation demand management system",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_afa3f9e9",
+      "canonical_name": "Department of Public Works",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_1a2b59d0",
+      "canonical_name": "preamble language",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_f7066366",
+      "canonical_name": "comprehensive citywide program",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_2ae9c2fe",
+      "canonical_name": "this effort",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_e2939912",
+      "canonical_name": "land use transportation plan",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_d18dc4e9",
+      "canonical_name": "this conversation",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_43442687",
+      "canonical_name": "keeping neighbors informed",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_6d24797f",
+      "canonical_name": "a couple more questions",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_e2e0c2c2",
+      "canonical_name": "finding the money",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_e78c727f",
+      "canonical_name": "balancing neighborhood interests",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_c0150ffb",
+      "canonical_name": "adjacent property",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_49fda5ca",
+      "canonical_name": "another amendment",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_43fd1c89",
+      "canonical_name": "resolutions for adoption",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_17340e7e",
+      "canonical_name": "ordered published as amended",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_cf3df824",
+      "canonical_name": "moratorium",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_cc455b55",
+      "canonical_name": "set in August for nine months",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_8fb50c26",
+      "canonical_name": "March 31st",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_284330ca",
+      "canonical_name": "May 1st",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-01",
+      "last_seen": "2024-01-01"
+    },
+    {
+      "id": "entity_80d6cccd",
+      "canonical_name": "Vice Mayor Richardson",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-02",
+      "last_seen": "2024-01-02"
+    },
+    {
+      "id": "entity_b7539a73",
+      "canonical_name": "Housing Choice Voucher Program",
+      "entity_type": "POLICY",
+      "aliases": [],
+      "first_seen": "2024-01-02",
+      "last_seen": "2024-01-02"
+    },
+    {
+      "id": "entity_76404870",
+      "canonical_name": "Section eight",
+      "entity_type": "POLICY",
+      "aliases": [],
+      "first_seen": "2024-01-02",
+      "last_seen": "2024-01-02"
+    },
+    {
+      "id": "entity_3d938f42",
+      "canonical_name": "CDBG",
+      "entity_type": "POLICY",
+      "aliases": [],
+      "first_seen": "2024-01-02",
+      "last_seen": "2024-01-02"
+    },
+    {
+      "id": "entity_b44c5260",
+      "canonical_name": "L.A. County",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-02",
+      "last_seen": "2024-01-02"
+    },
+    {
+      "id": "entity_afc06e04",
+      "canonical_name": "DOCA program",
+      "entity_type": "POLICY",
+      "aliases": [],
+      "first_seen": "2024-01-02",
+      "last_seen": "2024-01-02"
+    },
+    {
+      "id": "entity_a77a4d57",
+      "canonical_name": "Councilmember Yuri",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-02",
+      "last_seen": "2024-01-02"
+    },
+    {
+      "id": "entity_23184e36",
+      "canonical_name": "Councilmember Gonzales",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-02",
+      "last_seen": "2024-01-02"
+    },
+    {
+      "id": "entity_ac0a40c0",
+      "canonical_name": "Councilmember Saranga",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-02",
+      "last_seen": "2024-01-02"
+    },
+    {
+      "id": "entity_305dc44a",
+      "canonical_name": "Councilmember Ringo",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-02",
+      "last_seen": "2024-01-02"
+    },
+    {
+      "id": "entity_d407598c",
+      "canonical_name": "Councilmember Pearce",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-02",
+      "last_seen": "2024-01-02"
+    },
+    {
+      "id": "entity_ff827477",
+      "canonical_name": "request City Council approval of the 2017 federal legislative agenda",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-02",
+      "last_seen": "2024-01-02"
+    },
+    {
+      "id": "entity_4487c568",
+      "canonical_name": "support federal assistance toward establishing substance use treatment facilities",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-02",
+      "last_seen": "2024-01-02"
+    },
+    {
+      "id": "entity_0daa419f",
+      "canonical_name": "support federal legislation that maintains existing allowances for undocumented immigrants to who qualify for the DOCA program",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-02",
+      "last_seen": "2024-01-02"
+    },
+    {
+      "id": "entity_c5e5bc6c",
+      "canonical_name": "support mental health services",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-02",
+      "last_seen": "2024-01-02"
+    },
+    {
+      "id": "entity_79b84822",
+      "canonical_name": "next Fed trip",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-02",
+      "last_seen": "2024-01-02"
+    },
+    {
+      "id": "entity_3e759e21",
+      "canonical_name": "Councilmember Peterson",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-03",
+      "last_seen": "2024-01-03"
+    },
+    {
+      "id": "entity_4d01b6dd",
+      "canonical_name": "Councilmember Nelson",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-03",
+      "last_seen": "2024-01-03"
+    },
+    {
+      "id": "entity_f676ca54",
+      "canonical_name": "Councilmember Mosqueda",
+      "entity_type": "PERSON",
+      "aliases": [],
+      "first_seen": "2024-01-03",
+      "last_seen": "2024-01-03"
+    },
+    {
+      "id": "entity_23c66c94",
+      "canonical_name": "Madam Clerk",
+      "entity_type": "ROLE",
+      "aliases": [],
+      "first_seen": "2024-01-03",
+      "last_seen": "2024-01-03"
+    },
+    {
+      "id": "entity_167399c4",
+      "canonical_name": "King County elections",
+      "entity_type": "ORGANIZATION",
+      "aliases": [],
+      "first_seen": "2024-01-03",
+      "last_seen": "2024-01-03"
+    },
+    {
+      "id": "entity_adf8af4e",
+      "canonical_name": "City Clerk",
+      "entity_type": "ROLE",
+      "aliases": [],
+      "first_seen": "2024-01-03",
+      "last_seen": "2024-01-03"
+    },
+    {
+      "id": "entity_eea4e9bb",
+      "canonical_name": "initiative number 134",
+      "entity_type": "PROJECT",
+      "aliases": [],
+      "first_seen": "2024-01-03",
+      "last_seen": "2024-01-03"
+    },
+    {
+      "id": "entity_c87d0733",
+      "canonical_name": "Seattle Parks and Recreation",
+      "entity_type": "DEPARTMENT",
+      "aliases": [],
+      "first_seen": "2024-01-03",
+      "last_seen": "2024-01-03"
+    },
+    {
+      "id": "entity_80ddfdf9",
+      "canonical_name": "Seattle Repertory School",
+      "entity_type": "ORGANIZATION",
+      "aliases": [],
+      "first_seen": "2024-01-03",
+      "last_seen": "2024-01-03"
+    },
+    {
+      "id": "entity_eec90a16",
+      "canonical_name": "sufficient signatures",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-03",
+      "last_seen": "2024-01-03"
+    },
+    {
+      "id": "entity_98b82fd8",
+      "canonical_name": "filing the notice",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-03",
+      "last_seen": "2024-01-03"
+    },
+    {
+      "id": "entity_ac5c0946",
+      "canonical_name": "clerk file 314495",
+      "entity_type": "OTHER",
+      "aliases": [],
+      "first_seen": "2024-01-03",
+      "last_seen": "2024-01-03"
+    },
+    {
+      "id": "entity_6cafc183",
+      "canonical_name": "postponed to July 5th, 2022",
+      "entity_type": "OTHER",
+      "aliases": [
+        "postponed to July 12th, 2022"
+      ],
+      "first_seen": "2024-01-03",
+      "last_seen": "2024-01-03"
+    }
+  ],
+  "edges": [
+    {
+      "u": "entity_9e5e9311",
+      "v": "entity_ffaf3f3c",
+      "key": "rel_f612af13",
+      "relation_id": "rel_f612af13",
+      "subject_id": "entity_9e5e9311",
+      "relation": "responsible_for",
+      "object_id": "entity_ffaf3f3c",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: I see this as the the the Brooks. Brooks Brooks. Clarke. Bill, because you got us here to a point where we're talking about things and moving forward.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_ebe4087a",
+      "v": "entity_b78097c3",
+      "key": "rel_04367d9f",
+      "relation_id": "rel_04367d9f",
+      "subject_id": "entity_ebe4087a",
+      "relation": "responsible_for",
+      "object_id": "entity_b78097c3",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: Thank you, Mr. President. This amendment updates the zoning code reference that changed as a result to the passage of Council Bill 17 0311.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_ebe4087a",
+      "v": "entity_2f8ef1e2",
+      "key": "rel_e19fc21c",
+      "relation_id": "rel_e19fc21c",
+      "subject_id": "entity_ebe4087a",
+      "relation": "supported_by",
+      "object_id": "entity_2f8ef1e2",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: the intent of i n c that has always been to support the proposed ordinance of Councilman Clark.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_ebe4087a",
+      "v": "entity_00da9b5b",
+      "key": "rel_7f9110bd",
+      "relation_id": "rel_7f9110bd",
+      "subject_id": "entity_ebe4087a",
+      "relation": "proposed",
+      "object_id": "entity_00da9b5b",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: I am up here to say support the zone lot parking exemption amendment as it was presented by Councilman Clark.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_ebe4087a",
+      "v": "entity_65e826a8",
+      "key": "rel_ab42214a",
+      "relation_id": "rel_ab42214a",
+      "subject_id": "entity_ebe4087a",
+      "relation": "thanks",
+      "object_id": "entity_65e826a8",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: thank you, Mr. President, for taking this on and for also being open to disagreement and conversation.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_ebe4087a",
+      "v": "entity_5975d66a",
+      "key": "rel_d71118df",
+      "relation_id": "rel_d71118df",
+      "subject_id": "entity_ebe4087a",
+      "relation": "member_of",
+      "object_id": "entity_5975d66a",
+      "valid_from": "2024-01-01",
+      "valid_to": "2024-01-01",
+      "status": "superseded",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: I will be supporting this sausage. You know, and Councilman Clark and I sat down...",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_ebe4087a",
+      "v": "entity_dda19eef",
+      "key": "rel_a5fcc594",
+      "relation_id": "rel_a5fcc594",
+      "subject_id": "entity_ebe4087a",
+      "relation": "opposes",
+      "object_id": "entity_dda19eef",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: I would encourage my colleagues to reinforce what we voted last week and defeat this repeal of the amendment.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_ebe4087a",
+      "v": "entity_93e8d3b5",
+      "key": "rel_336f9fe1",
+      "relation_id": "rel_336f9fe1",
+      "subject_id": "entity_ebe4087a",
+      "relation": "leads",
+      "object_id": "entity_93e8d3b5",
+      "valid_from": "2024-01-01",
+      "valid_to": "2024-01-01",
+      "status": "superseded",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: Councilman Clark is going to be leading this two year effort with CPD in public works.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_ebe4087a",
+      "v": "entity_4f6f30fa",
+      "key": "rel_d581fea4",
+      "relation_id": "rel_d581fea4",
+      "subject_id": "entity_ebe4087a",
+      "relation": "supports",
+      "object_id": "entity_4f6f30fa",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: This kind of captures that in here to allow us to express that intent.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_ebe4087a",
+      "v": "entity_2ae9c2fe",
+      "key": "rel_bef75223",
+      "relation_id": "rel_bef75223",
+      "subject_id": "entity_ebe4087a",
+      "relation": "leads",
+      "object_id": "entity_2ae9c2fe",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: I just wanted to jump in on the beginning of where Councilman Espinosa started and offer my also my thanks to you, Mr. President, for leading this effort.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_ebe4087a",
+      "v": "entity_d18dc4e9",
+      "key": "rel_90274537",
+      "relation_id": "rel_90274537",
+      "subject_id": "entity_ebe4087a",
+      "relation": "member_of",
+      "object_id": "entity_d18dc4e9",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: Thank you, Mr. President. I just wanted to jump in on the beginning of where Councilman Espinosa started and offer my also my thanks to you, Mr. President, for leading this effort.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_ebe4087a",
+      "v": "entity_49fda5ca",
+      "key": "rel_7b1fa79a",
+      "relation_id": "rel_7b1fa79a",
+      "subject_id": "entity_ebe4087a",
+      "relation": "discusses",
+      "object_id": "entity_49fda5ca",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: I did have another amendment that we've been discussing a lot in committee, and I will not be offering that tonight.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_65e826a8",
+      "v": "entity_2f37a25a",
+      "key": "rel_a313bd1c",
+      "relation_id": "rel_a313bd1c",
+      "subject_id": "entity_65e826a8",
+      "relation": "leads",
+      "object_id": "entity_2f37a25a",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: I appreciate how you have led us on this issue.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_23adff48",
+      "v": "entity_2b6ea7a4",
+      "key": "rel_e30ad97c",
+      "relation_id": "rel_e30ad97c",
+      "subject_id": "entity_23adff48",
+      "relation": "member_of",
+      "object_id": "entity_2b6ea7a4",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: Tina Axelrod with KPD Development Services and the zoning administrator for the city of Denver.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_5255002f",
+      "v": "entity_e082c44b",
+      "key": "rel_227044b1",
+      "relation_id": "rel_227044b1",
+      "subject_id": "entity_5255002f",
+      "relation": "status_is",
+      "object_id": "entity_e082c44b",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: CPD recommends denial of this text amendment to the Denver zoning code.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_5255002f",
+      "v": "entity_f37f19e4",
+      "key": "rel_2f4dbfe7",
+      "relation_id": "rel_2f4dbfe7",
+      "subject_id": "entity_5255002f",
+      "relation": "responsible_for",
+      "object_id": "entity_f37f19e4",
+      "valid_from": "2024-01-01",
+      "valid_to": "2024-01-01",
+      "status": "superseded",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: CPD does recommend denial of the bill, finding that two of the three text amendment criteria are not met.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_5255002f",
+      "v": "entity_091d967b",
+      "key": "rel_28099624",
+      "relation_id": "rel_28099624",
+      "subject_id": "entity_5255002f",
+      "relation": "responsible_for",
+      "object_id": "entity_091d967b",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: CPD has been trying to provide a technical lens throughout the process.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_5255002f",
+      "v": "entity_afa3f9e9",
+      "key": "rel_eec1f84c",
+      "relation_id": "rel_eec1f84c",
+      "subject_id": "entity_5255002f",
+      "relation": "collaborates_with",
+      "object_id": "entity_afa3f9e9",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: we have been working really close to public works, very committed.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_4cdbf95a",
+      "v": "entity_d98b5b8c",
+      "key": "rel_4332932f",
+      "relation_id": "rel_4332932f",
+      "subject_id": "entity_4cdbf95a",
+      "relation": "status_is",
+      "object_id": "entity_d98b5b8c",
+      "valid_from": "2024-01-01",
+      "valid_to": "2024-01-01",
+      "status": "superseded",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: Yes, President Brooks, I move that council bill 161 as amended, be placed upon final consideration and do pass.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_4cdbf95a",
+      "v": "entity_faf4e2f9",
+      "key": "rel_04f912e5",
+      "relation_id": "rel_04f912e5",
+      "subject_id": "entity_4cdbf95a",
+      "relation": "status_is",
+      "object_id": "entity_faf4e2f9",
+      "valid_from": "2024-01-01",
+      "valid_to": "2024-01-01",
+      "status": "superseded",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: the public hearing for Council Bill 161, as amended, is open.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_4cdbf95a",
+      "v": "entity_f42deb2c",
+      "key": "rel_dbf16725",
+      "relation_id": "rel_dbf16725",
+      "subject_id": "entity_4cdbf95a",
+      "relation": "status_is",
+      "object_id": "entity_f42deb2c",
+      "valid_from": "2024-01-01",
+      "valid_to": "2024-01-01",
+      "status": "superseded",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: Nine eyes, two nays. Council Bill 161 has passed as amended.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_4cdbf95a",
+      "v": "entity_766323b2",
+      "key": "rel_90704e49",
+      "relation_id": "rel_90704e49",
+      "subject_id": "entity_4cdbf95a",
+      "relation": "status_is",
+      "object_id": "entity_766323b2",
+      "valid_from": "2024-01-01",
+      "valid_to": "2024-01-01",
+      "status": "superseded",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: An assessment has called out council bill 161 for an amendment.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_4cdbf95a",
+      "v": "entity_34dc2361",
+      "key": "rel_aeb4cadc",
+      "relation_id": "rel_aeb4cadc",
+      "subject_id": "entity_4cdbf95a",
+      "relation": "responsible_for",
+      "object_id": "entity_34dc2361",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: Mr. President, I move that council bill 161 to 2017 be placed upon the floor. Final consideration to pass.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_4cdbf95a",
+      "v": "entity_8397acdd",
+      "key": "rel_16e9574b",
+      "relation_id": "rel_16e9574b",
+      "subject_id": "entity_4cdbf95a",
+      "relation": "status_is",
+      "object_id": "entity_8397acdd",
+      "valid_from": "2024-01-01",
+      "valid_to": "2024-01-01",
+      "status": "superseded",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: The amendment to council Bill 161 has failed.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_4cdbf95a",
+      "v": "entity_600ec973",
+      "key": "rel_56f42e26",
+      "relation_id": "rel_56f42e26",
+      "subject_id": "entity_4cdbf95a",
+      "relation": "status_is",
+      "object_id": "entity_600ec973",
+      "valid_from": "2024-01-01",
+      "valid_to": "2024-01-01",
+      "status": "superseded",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: Council Bill 161 has been held in committee till Monday, March 20/20, 2017.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_4cdbf95a",
+      "v": "entity_600ec973",
+      "key": "rel_63091aed",
+      "relation_id": "rel_63091aed",
+      "subject_id": "entity_4cdbf95a",
+      "relation": "status_is",
+      "object_id": "entity_600ec973",
+      "valid_from": "2024-01-01",
+      "valid_to": "2024-01-01",
+      "status": "superseded",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: Council Bill 161 has been held in committee till Monday, February 27th.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_4cdbf95a",
+      "v": "entity_6c5e6b98",
+      "key": "rel_602da488",
+      "relation_id": "rel_602da488",
+      "subject_id": "entity_4cdbf95a",
+      "relation": "status_is",
+      "object_id": "entity_6c5e6b98",
+      "valid_from": "2024-01-01",
+      "valid_to": "2024-01-01",
+      "status": "superseded",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: Yes, Mr. President, I move that council bill 161 be ordered published.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_4cdbf95a",
+      "v": "entity_9c894187",
+      "key": "rel_b729dc31",
+      "relation_id": "rel_b729dc31",
+      "subject_id": "entity_4cdbf95a",
+      "relation": "has_amendment",
+      "object_id": "entity_9c894187",
+      "valid_from": "2024-01-01",
+      "valid_to": "2024-01-01",
+      "status": "superseded",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: It's a very strict interpretation, but it could happen.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_4cdbf95a",
+      "v": "entity_1a2b59d0",
+      "key": "rel_a315b59c",
+      "relation_id": "rel_a315b59c",
+      "subject_id": "entity_4cdbf95a",
+      "relation": "has_amendment",
+      "object_id": "entity_1a2b59d0",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: This amendment is in the preamble language.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_4cdbf95a",
+      "v": "entity_17340e7e",
+      "key": "rel_8c747408",
+      "relation_id": "rel_8c747408",
+      "subject_id": "entity_4cdbf95a",
+      "relation": "status_is",
+      "object_id": "entity_17340e7e",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: Council Bill has been ordered publish as amended.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_4cdbf95a",
+      "v": "entity_284330ca",
+      "key": "rel_16ffbbd2",
+      "relation_id": "rel_16ffbbd2",
+      "subject_id": "entity_4cdbf95a",
+      "relation": "public_hearing_on",
+      "object_id": "entity_284330ca",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: Final consideration of Council Bill 161. Public hearing will be May 1st.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_333bb410",
+      "v": "entity_325cf516",
+      "key": "rel_d115c000",
+      "relation_id": "rel_d115c000",
+      "subject_id": "entity_333bb410",
+      "relation": "renamed_to",
+      "object_id": "entity_325cf516",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: This amendment updates the zoning code reference that changed as a result to the passage of Council Bill 17 0311.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_3445bcfb",
+      "v": "entity_dc7fb2ce",
+      "key": "rel_9ce5dd11",
+      "relation_id": "rel_9ce5dd11",
+      "subject_id": "entity_3445bcfb",
+      "relation": "renamed_to",
+      "object_id": "entity_dc7fb2ce",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: the prior bill that had an increase in the number of stories and different components to it.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_3445bcfb",
+      "v": "entity_8146e323",
+      "key": "rel_e9603828",
+      "relation_id": "rel_e9603828",
+      "subject_id": "entity_3445bcfb",
+      "relation": "member_of",
+      "object_id": "entity_8146e323",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: I was on the steering committee, as you know. Councilman Brooks and Councilman Cashman for the old South Pearl Street area of Platt Park.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_3445bcfb",
+      "v": "entity_ec068121",
+      "key": "rel_29735856",
+      "relation_id": "rel_29735856",
+      "subject_id": "entity_3445bcfb",
+      "relation": "responsible_for",
+      "object_id": "entity_ec068121",
+      "valid_from": "2024-01-01",
+      "valid_to": "2024-01-01",
+      "status": "superseded",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: Yeah, you know, that was Councilman Brooks's committee.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_3445bcfb",
+      "v": "entity_67194433",
+      "key": "rel_41843183",
+      "relation_id": "rel_41843183",
+      "subject_id": "entity_3445bcfb",
+      "relation": "responsible_for",
+      "object_id": "entity_67194433",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: Councilman Brooks ran a very comprehensive community process at looking at all the issues...",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_2f8ef1e2",
+      "v": "entity_455335b6",
+      "key": "rel_34b36939",
+      "relation_id": "rel_34b36939",
+      "subject_id": "entity_2f8ef1e2",
+      "relation": "supports",
+      "object_id": "entity_455335b6",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: I am pleased to speak before you tonight in support of the adoption of Bill 17 161.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_adc6f01e",
+      "v": "entity_09e140d4",
+      "key": "rel_5209e41b",
+      "relation_id": "rel_5209e41b",
+      "subject_id": "entity_adc6f01e",
+      "relation": "status_is",
+      "object_id": "entity_09e140d4",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: However, the elimination of parking requirements at this time will not do this. Not right now. Denver is not there yet.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_cecaeec0",
+      "v": "entity_31022b60",
+      "key": "rel_c39f47fc",
+      "relation_id": "rel_c39f47fc",
+      "subject_id": "entity_cecaeec0",
+      "relation": "responsible_for",
+      "object_id": "entity_31022b60",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: the board voted by email...to approve a motion to support the compromise ordinance.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_a8f81cad",
+      "v": "entity_9895b9b6",
+      "key": "rel_0c44a5b5",
+      "relation_id": "rel_0c44a5b5",
+      "subject_id": "entity_a8f81cad",
+      "relation": "supports",
+      "object_id": "entity_9895b9b6",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: I urge you to pass this bill this evening.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_c7278e4a",
+      "v": "entity_98700431",
+      "key": "rel_812fe226",
+      "relation_id": "rel_812fe226",
+      "subject_id": "entity_c7278e4a",
+      "relation": "appreciates",
+      "object_id": "entity_98700431",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: show some appreciation for the work that you've put into taking what was kind of came about suddenly.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_c79d37d0",
+      "v": "entity_ffba2127",
+      "key": "rel_17a2322e",
+      "relation_id": "rel_17a2322e",
+      "subject_id": "entity_c79d37d0",
+      "relation": "challenges",
+      "object_id": "entity_ffba2127",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: I would like to speak to the conversation that's been going on that was addressed in the Denver Street Blog's article.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_9451fdea",
+      "v": "entity_6b2a69bb",
+      "key": "rel_821f250a",
+      "relation_id": "rel_821f250a",
+      "subject_id": "entity_9451fdea",
+      "relation": "responsible_for",
+      "object_id": "entity_6b2a69bb",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: We just went through with Cindy Patton and staff a two year process of trying to figure out the parking in our neighborhoods.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_73ac796e",
+      "v": "entity_a1663326",
+      "key": "rel_40aeff3f",
+      "relation_id": "rel_40aeff3f",
+      "subject_id": "entity_73ac796e",
+      "relation": "represents",
+      "object_id": "entity_a1663326",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: I always ask myself the question. How does this impact working people?",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_2c137733",
+      "v": "entity_9296ee18",
+      "key": "rel_24bb530e",
+      "relation_id": "rel_24bb530e",
+      "subject_id": "entity_2c137733",
+      "relation": "member_of",
+      "object_id": "entity_9296ee18",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: I am here representing Goddess.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_9296ee18",
+      "v": "entity_89b52a34",
+      "key": "rel_cbb8ffe8",
+      "relation_id": "rel_cbb8ffe8",
+      "subject_id": "entity_9296ee18",
+      "relation": "responsible_for",
+      "object_id": "entity_89b52a34",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: He is the developer of D Line.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_482f1eb0",
+      "v": "entity_b78097c3",
+      "key": "rel_c607264e",
+      "relation_id": "rel_c607264e",
+      "subject_id": "entity_482f1eb0",
+      "relation": "status_is",
+      "object_id": "entity_b78097c3",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: we greatly appreciate Councilmember Clarke's amendment added to the.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_1541ee8b",
+      "v": "entity_4fdaf271",
+      "key": "rel_ac8cea60",
+      "relation_id": "rel_ac8cea60",
+      "subject_id": "entity_1541ee8b",
+      "relation": "member_of",
+      "object_id": "entity_4fdaf271",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: I am the president of Curtis Park.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_0fb53564",
+      "v": "entity_bdbe4569",
+      "key": "rel_b3c61b32",
+      "relation_id": "rel_b3c61b32",
+      "subject_id": "entity_0fb53564",
+      "relation": "status_is",
+      "object_id": "entity_bdbe4569",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: I oppose this.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_4fdaf271",
+      "v": "entity_fb4d33a6",
+      "key": "rel_ef1319aa",
+      "relation_id": "rel_ef1319aa",
+      "subject_id": "entity_4fdaf271",
+      "relation": "supports",
+      "object_id": "entity_fb4d33a6",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: will provide, I hope, affordable housing with fewer parking spaces.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_e9e0443e",
+      "v": "entity_9837d583",
+      "key": "rel_36a0aafb",
+      "relation_id": "rel_36a0aafb",
+      "subject_id": "entity_e9e0443e",
+      "relation": "status_is",
+      "object_id": "entity_9837d583",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: And Brooks number is not zero anymore.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_ffaf3f3c",
+      "v": "entity_65645dda",
+      "key": "rel_0011add7",
+      "relation_id": "rel_0011add7",
+      "subject_id": "entity_ffaf3f3c",
+      "relation": "member_of",
+      "object_id": "entity_65645dda",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: Councilman Brooks proposal also added parking.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_8f246002",
+      "v": "entity_9895b9b6",
+      "key": "rel_9799c987",
+      "relation_id": "rel_9799c987",
+      "subject_id": "entity_8f246002",
+      "relation": "supports",
+      "object_id": "entity_9895b9b6",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: I will be supporting it.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_8f246002",
+      "v": "entity_dc36d008",
+      "key": "rel_07ab78c7",
+      "relation_id": "rel_07ab78c7",
+      "subject_id": "entity_8f246002",
+      "relation": "member_of",
+      "object_id": "entity_dc36d008",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: In a plug for council. Councilman Espinosa's urban design deal happening on Wednesday.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_8f246002",
+      "v": "entity_6d24797f",
+      "key": "rel_8ee00b32",
+      "relation_id": "rel_8ee00b32",
+      "subject_id": "entity_8f246002",
+      "relation": "questions",
+      "object_id": "entity_6d24797f",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: Sarah, I just had a couple more questions, please.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_417af916",
+      "v": "entity_fdd7ed80",
+      "key": "rel_da2fd175",
+      "relation_id": "rel_da2fd175",
+      "subject_id": "entity_417af916",
+      "relation": "supportive_of",
+      "object_id": "entity_fdd7ed80",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: they support Dolan's bill and have asked me to support it.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_417af916",
+      "v": "entity_dda19eef",
+      "key": "rel_efcd73c8",
+      "relation_id": "rel_efcd73c8",
+      "subject_id": "entity_417af916",
+      "relation": "supports",
+      "object_id": "entity_dda19eef",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: I therefore urge everybody to pass this amendment.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_417af916",
+      "v": "entity_dda19eef",
+      "key": "rel_5dd172ed",
+      "relation_id": "rel_5dd172ed",
+      "subject_id": "entity_417af916",
+      "relation": "responsible_for",
+      "object_id": "entity_dda19eef",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: So I will be supporting councilwoman assessments amendment moving forward.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_0467f4a9",
+      "v": "entity_296fe80b",
+      "key": "rel_5ef0ad55",
+      "relation_id": "rel_5ef0ad55",
+      "subject_id": "entity_0467f4a9",
+      "relation": "member_of",
+      "object_id": "entity_296fe80b",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: I do serve on the Denver. Planning Board, but.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_296fe80b",
+      "v": "entity_18c1eb39",
+      "key": "rel_c4294b2d",
+      "relation_id": "rel_c4294b2d",
+      "subject_id": "entity_296fe80b",
+      "relation": "status_is",
+      "object_id": "entity_18c1eb39",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: Based on the Denver Planning Board bylaws, I can't speak on their behalf.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_9520614c",
+      "v": "entity_d6ba9760",
+      "key": "rel_20e2195c",
+      "relation_id": "rel_20e2195c",
+      "subject_id": "entity_9520614c",
+      "relation": "status_is",
+      "object_id": "entity_d6ba9760",
+      "valid_from": "2024-01-01",
+      "valid_to": "2024-01-01",
+      "status": "superseded",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: Mind you, at the time that was adopted 15 years ago, all areas were subject to Chapter 59 zoning regulations.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_9520614c",
+      "v": "entity_e2939912",
+      "key": "rel_3dd3331d",
+      "relation_id": "rel_3dd3331d",
+      "subject_id": "entity_9520614c",
+      "relation": "status_is",
+      "object_id": "entity_e2939912",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: So particularly for Blueprint Denver, which is the land use transportation plan that's part of Denver.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_140abf78",
+      "v": "entity_66d5093b",
+      "key": "rel_18d08738",
+      "relation_id": "rel_18d08738",
+      "subject_id": "entity_140abf78",
+      "relation": "member_of",
+      "object_id": "entity_66d5093b",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: I notice that you've been attending our geo open transportation and mobility meetings.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_bc19a162",
+      "v": "entity_67a7b0e5",
+      "key": "rel_46e2e887",
+      "relation_id": "rel_46e2e887",
+      "subject_id": "entity_bc19a162",
+      "relation": "supporting",
+      "object_id": "entity_67a7b0e5",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: this is why I supported the amendment and this is why I support this moving forward as until we are there.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_bc19a162",
+      "v": "entity_90aa0792",
+      "key": "rel_08d331a7",
+      "relation_id": "rel_08d331a7",
+      "subject_id": "entity_bc19a162",
+      "relation": "member_of",
+      "object_id": "entity_90aa0792",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: Councilman Lopez, will you put the resolutions for adoptions and the bills for final consideration on final passage on the floor?",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_bf6e76c0",
+      "v": "entity_5b92bf69",
+      "key": "rel_d292f28a",
+      "relation_id": "rel_d292f28a",
+      "subject_id": "entity_bf6e76c0",
+      "relation": "views",
+      "object_id": "entity_5b92bf69",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: I always tell them two things. I tell them that my biggest surprise is how competent city staff is.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_bf6e76c0",
+      "v": "entity_6f8691ae",
+      "key": "rel_7039df8a",
+      "relation_id": "rel_7039df8a",
+      "subject_id": "entity_bf6e76c0",
+      "relation": "describes",
+      "object_id": "entity_6f8691ae",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: But we're a very collegial group.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_bf6e76c0",
+      "v": "entity_a9722bf0",
+      "key": "rel_8cc05dc9",
+      "relation_id": "rel_8cc05dc9",
+      "subject_id": "entity_bf6e76c0",
+      "relation": "believes",
+      "object_id": "entity_a9722bf0",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: I think as we've gotten into it, the topic has revealed itself to be more complicated.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_bf6e76c0",
+      "v": "entity_a62e6153",
+      "key": "rel_3c34906f",
+      "relation_id": "rel_3c34906f",
+      "subject_id": "entity_bf6e76c0",
+      "relation": "suggests",
+      "object_id": "entity_a62e6153",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: I'm thinking, why are we getting off the transit corridor?",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_bf6e76c0",
+      "v": "entity_93d3fdb0",
+      "key": "rel_40355c0e",
+      "relation_id": "rel_40355c0e",
+      "subject_id": "entity_bf6e76c0",
+      "relation": "supports",
+      "object_id": "entity_93d3fdb0",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: I support what I consider a mediocre bill because I consider the alternative poisonous.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_a37b807f",
+      "v": "entity_ebe4087a",
+      "key": "rel_8e1f1731",
+      "relation_id": "rel_8e1f1731",
+      "subject_id": "entity_a37b807f",
+      "relation": "thanks",
+      "object_id": "entity_ebe4087a",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: I echo the thanks to Councilman Clark and Counsel Brooks...",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_03edb533",
+      "v": "entity_98a28435",
+      "key": "rel_226adfee",
+      "relation_id": "rel_226adfee",
+      "subject_id": "entity_03edb533",
+      "relation": "responsible_for",
+      "object_id": "entity_98a28435",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: I got really excited when City Pan came up because I thought City was going to lay out a transportation plan for us.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_83b22051",
+      "v": "entity_dc36d008",
+      "key": "rel_5ca1fd93",
+      "relation_id": "rel_5ca1fd93",
+      "subject_id": "entity_83b22051",
+      "relation": "member_of",
+      "object_id": "entity_dc36d008",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: And I appreciate you bringing in the urban design.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_28515686",
+      "v": "entity_1897c8ff",
+      "key": "rel_fb360660",
+      "relation_id": "rel_fb360660",
+      "subject_id": "entity_28515686",
+      "relation": "status_is",
+      "object_id": "entity_1897c8ff",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: But guess what? RTD just did away with that discounted bus pass.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_fc8f6454",
+      "v": "entity_417af916",
+      "key": "rel_c16f99b6",
+      "relation_id": "rel_c16f99b6",
+      "subject_id": "entity_fc8f6454",
+      "relation": "expresses_concern_about",
+      "object_id": "entity_417af916",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: I think I'm most distressed to hear that Councilwoman Sussman is going to destroy the Flynn corollary.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_43fd977e",
+      "v": "entity_4cdbf95a",
+      "key": "rel_8540b906",
+      "relation_id": "rel_8540b906",
+      "subject_id": "entity_43fd977e",
+      "relation": "supports",
+      "object_id": "entity_4cdbf95a",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: that being said, I'm going to go ahead and support Council Bill 161.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_e21faf66",
+      "v": "entity_cf48aa0d",
+      "key": "rel_a15dca6e",
+      "relation_id": "rel_a15dca6e",
+      "subject_id": "entity_e21faf66",
+      "relation": "status_is",
+      "object_id": "entity_cf48aa0d",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: I urge you to support Councilman Clarke's amendment.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_5649efc0",
+      "v": "entity_fcca9d41",
+      "key": "rel_914839c7",
+      "relation_id": "rel_914839c7",
+      "subject_id": "entity_5649efc0",
+      "relation": "explains",
+      "object_id": "entity_fcca9d41",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: There is no council rule that prevents you from revisiting and re debating something even when you voted on it once.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_24ca33d8",
+      "v": "entity_a51c3328",
+      "key": "rel_9067728c",
+      "relation_id": "rel_9067728c",
+      "subject_id": "entity_24ca33d8",
+      "relation": "status_is",
+      "object_id": "entity_a51c3328",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: Nine Ice nine Ice Council Bill 153 has been ordered publish.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_8622dede",
+      "v": "entity_983463d6",
+      "key": "rel_9d92b239",
+      "relation_id": "rel_9d92b239",
+      "subject_id": "entity_8622dede",
+      "relation": "status_is",
+      "object_id": "entity_983463d6",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: the moratorium will be voted on in a block its it's council bill 277 until May 20th.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_90aa0792",
+      "v": "entity_3d9e0b5b",
+      "key": "rel_c5b023a8",
+      "relation_id": "rel_c5b023a8",
+      "subject_id": "entity_90aa0792",
+      "relation": "status_is",
+      "object_id": "entity_3d9e0b5b",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: Council has repeatedly stated its preference for less driving and more walkability in our neighborhoods.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_90aa0792",
+      "v": "entity_f2fa1d6c",
+      "key": "rel_b2bf65f7",
+      "relation_id": "rel_b2bf65f7",
+      "subject_id": "entity_90aa0792",
+      "relation": "responsible_for",
+      "object_id": "entity_f2fa1d6c",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: Unlike past city councils, we, the voting citizens of Denver, hold you responsible now for the protection of residential neighborhoods and smart development.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_cfd4dd36",
+      "v": "entity_6a11aa37",
+      "key": "rel_b2c4bae6",
+      "relation_id": "rel_b2c4bae6",
+      "subject_id": "entity_cfd4dd36",
+      "relation": "status_is",
+      "object_id": "entity_6a11aa37",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: Council Bill 285 will be postponed for one week until Tuesday, March 28th.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_0ed15cbb",
+      "v": "entity_5255002f",
+      "key": "rel_35e9c018",
+      "relation_id": "rel_35e9c018",
+      "subject_id": "entity_0ed15cbb",
+      "relation": "reports_to",
+      "object_id": "entity_5255002f",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: Yes. So Jeff Hurt with CPD.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_9002cb8f",
+      "v": "entity_43442687",
+      "key": "rel_2894c772",
+      "relation_id": "rel_2894c772",
+      "subject_id": "entity_9002cb8f",
+      "relation": "supports",
+      "object_id": "entity_43442687",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: I am supporting this because I think it's really important that neighbors are informed about what's happening in their neighborhoods.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_ebeaee50",
+      "v": "entity_e2e0c2c2",
+      "key": "rel_4b66191a",
+      "relation_id": "rel_4b66191a",
+      "subject_id": "entity_ebeaee50",
+      "relation": "responsible_for",
+      "object_id": "entity_e2e0c2c2",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: I'm asking the mayor's office. You're here. Find the money.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_c1aff8dc",
+      "v": "entity_856960f1",
+      "key": "rel_aefd10a6",
+      "relation_id": "rel_aefd10a6",
+      "subject_id": "entity_c1aff8dc",
+      "relation": "status_is",
+      "object_id": "entity_856960f1",
+      "valid_from": "2024-01-01",
+      "valid_to": "2024-01-01",
+      "status": "superseded",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: the planning board process and recommendation and the steering committee process and recommendation that represented a compromise.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_c1aff8dc",
+      "v": "entity_cf48aa0d",
+      "key": "rel_bc420ff9",
+      "relation_id": "rel_bc420ff9",
+      "subject_id": "entity_c1aff8dc",
+      "relation": "status_is",
+      "object_id": "entity_cf48aa0d",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: And then it came before the planning board, and they decided not to support it because it also takes away from predictability.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_89e96204",
+      "v": "entity_7c780afb",
+      "key": "rel_9e314522",
+      "relation_id": "rel_9e314522",
+      "subject_id": "entity_89e96204",
+      "relation": "prioritized",
+      "object_id": "entity_7c780afb",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: When this entire council placed as its number one budget priority, increased mobility and transportation.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_89e96204",
+      "v": "entity_e78c727f",
+      "key": "rel_9383441c",
+      "relation_id": "rel_9383441c",
+      "subject_id": "entity_89e96204",
+      "relation": "has_purview",
+      "object_id": "entity_e78c727f",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: And they do not have the the purview that we have on city council where we have to balance neighborhood interests, notification and things like that.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_89e96204",
+      "v": "entity_4487c568",
+      "key": "rel_20ba9c58",
+      "relation_id": "rel_20ba9c58",
+      "subject_id": "entity_89e96204",
+      "relation": "status_is",
+      "object_id": "entity_4487c568",
+      "valid_from": "2024-01-02",
+      "valid_to": "2024-01-02",
+      "status": "superseded",
+      "provenance": "meeting_001_segs_3: Staff recommended that the City Council support the city, support federal assistance toward establishing substance use treatment facilities in the region.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_89e96204",
+      "v": "entity_0daa419f",
+      "key": "rel_57406fbf",
+      "relation_id": "rel_57406fbf",
+      "subject_id": "entity_89e96204",
+      "relation": "status_is",
+      "object_id": "entity_0daa419f",
+      "valid_from": "2024-01-02",
+      "valid_to": "2024-01-02",
+      "status": "superseded",
+      "provenance": "meeting_001_segs_3: supporting federal legislation that maintains existing allowances for undocumented immigrants to who qualify for the DOCA program to remain in the United States.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_89e96204",
+      "v": "entity_c5e5bc6c",
+      "key": "rel_2987520f",
+      "relation_id": "rel_2987520f",
+      "subject_id": "entity_89e96204",
+      "relation": "status_is",
+      "object_id": "entity_c5e5bc6c",
+      "valid_from": "2024-01-02",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_001_segs_3: Language to support mental health services is already existing there.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_61ae1612",
+      "v": "entity_c0150ffb",
+      "key": "rel_0084504d",
+      "relation_id": "rel_0084504d",
+      "subject_id": "entity_61ae1612",
+      "relation": "has_parking_lot",
+      "object_id": "entity_c0150ffb",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: a case in point on on the Humble Project 16th in Humboldt, after a long conversation, we had the developer supply a parking not structure, but a parking lot adjacent to the property, which will alleviate some of the concerns on 16th and Humboldt.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_f0ddbe87",
+      "v": "entity_43fd1c89",
+      "key": "rel_cfb5e911",
+      "relation_id": "rel_cfb5e911",
+      "subject_id": "entity_f0ddbe87",
+      "relation": "moves",
+      "object_id": "entity_43fd1c89",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: Councilwoman Kinch, will you put the resolutions for adoptions and the bills on final consideration for final passage on the floor, please?",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_3a2b95a3",
+      "v": "entity_89e96204",
+      "key": "rel_e0ae69bd",
+      "relation_id": "rel_e0ae69bd",
+      "subject_id": "entity_3a2b95a3",
+      "relation": "accountable_to",
+      "object_id": "entity_89e96204",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: You are accountable to us, not CBD, not excise and licensing.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_b74f1c5d",
+      "v": "entity_0508a794",
+      "key": "rel_39a48467",
+      "relation_id": "rel_39a48467",
+      "subject_id": "entity_b74f1c5d",
+      "relation": "member_of",
+      "object_id": "entity_0508a794",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: The forum includes representatives from Kaiser Permanente, National Jewish and St Joe's Hospitals, Presbyterian Saints, Luke's Hospital, Children's Hospital in Denver.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_b74f1c5d",
+      "v": "entity_b3a795c2",
+      "key": "rel_ccaa57b1",
+      "relation_id": "rel_ccaa57b1",
+      "subject_id": "entity_b74f1c5d",
+      "relation": "supports",
+      "object_id": "entity_b3a795c2",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: The representatives present voted unanimously to have me represent them at this public hearing and to request your vote in favor of the small text amendments you have before you.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_6176aa09",
+      "v": "entity_21ca96f6",
+      "key": "rel_fd1a3433",
+      "relation_id": "rel_fd1a3433",
+      "subject_id": "entity_6176aa09",
+      "relation": "status_is",
+      "object_id": "entity_21ca96f6",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: One of their key strategies is to reduce off street parking requirements because it has the cost of that parking makes it very, very difficult.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_c6dd339e",
+      "v": "entity_fb4d33a6",
+      "key": "rel_21cde354",
+      "relation_id": "rel_21cde354",
+      "subject_id": "entity_c6dd339e",
+      "relation": "status_is",
+      "object_id": "entity_fb4d33a6",
+      "valid_from": "2024-01-01",
+      "valid_to": "2024-01-01",
+      "status": "superseded",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: it does make developed more expensive. It makes it harder to develop affordable housing.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_c6dd339e",
+      "v": "entity_242116dd",
+      "key": "rel_a287e62b",
+      "relation_id": "rel_a287e62b",
+      "subject_id": "entity_c6dd339e",
+      "relation": "status_is",
+      "object_id": "entity_242116dd",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: If you produce more housing, then there's more supply and the price should come down for a given amount of demand.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_bbf3ac60",
+      "v": "entity_4f7e559f",
+      "key": "rel_e95612df",
+      "relation_id": "rel_e95612df",
+      "subject_id": "entity_bbf3ac60",
+      "relation": "status_is",
+      "object_id": "entity_4f7e559f",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: The project is funded for design, I believe, and is moving through that process.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_d9d6dfe9",
+      "v": "entity_e96b2204",
+      "key": "rel_7044807b",
+      "relation_id": "rel_7044807b",
+      "subject_id": "entity_d9d6dfe9",
+      "relation": "related_to",
+      "object_id": "entity_e96b2204",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: the conversation about BRT on Colfax has been in progress for quite some time.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_ee82d47b",
+      "v": "entity_7f7916cf",
+      "key": "rel_3cc979dc",
+      "relation_id": "rel_3cc979dc",
+      "subject_id": "entity_ee82d47b",
+      "relation": "status_is",
+      "object_id": "entity_7f7916cf",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: our staff is reviewing this task force recommendation and what gets printed and shared with the public.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_69ea0783",
+      "v": "entity_7e31dd73",
+      "key": "rel_f096f94d",
+      "relation_id": "rel_f096f94d",
+      "subject_id": "entity_69ea0783",
+      "relation": "status_is",
+      "object_id": "entity_7e31dd73",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: the key criteria in a lot of these things is consistency with adopted plans.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_f76fac66",
+      "v": "entity_64235ecb",
+      "key": "rel_5c843db5",
+      "relation_id": "rel_5c843db5",
+      "subject_id": "entity_f76fac66",
+      "relation": "status_is",
+      "object_id": "entity_64235ecb",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: 3913 ays the resolutions have been adopted in the bills have been placed upon final consideration.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_afa3f9e9",
+      "v": "entity_f7066366",
+      "key": "rel_1eb3a4b7",
+      "relation_id": "rel_1eb3a4b7",
+      "subject_id": "entity_afa3f9e9",
+      "relation": "committed_to",
+      "object_id": "entity_f7066366",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: the Department of Public Works, the Department of Community Planning and Development, City Council and other agencies have expressed a commitment.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_cf3df824",
+      "v": "entity_cc455b55",
+      "key": "rel_70e9e447",
+      "relation_id": "rel_70e9e447",
+      "subject_id": "entity_cf3df824",
+      "relation": "status_is",
+      "object_id": "entity_cc455b55",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: we set this moratorium, I believe was in August for nine months.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_cf3df824",
+      "v": "entity_8fb50c26",
+      "key": "rel_37f1187b",
+      "relation_id": "rel_37f1187b",
+      "subject_id": "entity_cf3df824",
+      "relation": "ends_on",
+      "object_id": "entity_8fb50c26",
+      "valid_from": "2024-01-01",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_000_segs_0-1-2-4-5-6: March 31st is the date that the moratorium will be up.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_80d6cccd",
+      "v": "entity_ff827477",
+      "key": "rel_df7935db",
+      "relation_id": "rel_df7935db",
+      "subject_id": "entity_80d6cccd",
+      "relation": "responsible_for",
+      "object_id": "entity_ff827477",
+      "valid_from": "2024-01-02",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_001_segs_3: Communication from Vice Mayor Richardson recommendation to request City Council approval of the 2017 federal legislative agenda as recommended by the Federal Legislation Committee.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_ac0a40c0",
+      "v": "entity_79b84822",
+      "key": "rel_0ec35279",
+      "relation_id": "rel_0ec35279",
+      "subject_id": "entity_ac0a40c0",
+      "relation": "member_of",
+      "object_id": "entity_79b84822",
+      "valid_from": "2024-01-02",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_001_segs_3: And now we have Councilmember Saranga that will be joining us at our next Fed.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_adf8af4e",
+      "v": "entity_98b82fd8",
+      "key": "rel_b7263f9c",
+      "relation_id": "rel_b7263f9c",
+      "subject_id": "entity_adf8af4e",
+      "relation": "responsible_for",
+      "object_id": "entity_98b82fd8",
+      "valid_from": "2024-01-03",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_002_segs_7-9: the city clerk has 20 days from receipt of this notice from King County elections to file the notice with the city council.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_eea4e9bb",
+      "v": "entity_eec90a16",
+      "key": "rel_37bf2cd0",
+      "relation_id": "rel_37bf2cd0",
+      "subject_id": "entity_eea4e9bb",
+      "relation": "status_is",
+      "object_id": "entity_eec90a16",
+      "valid_from": "2024-01-03",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_002_segs_7-9: Clerk File 314495 is a notice that initiative 134 has sufficient signatures to go to the ballot.",
+      "confidence": 1.0
+    },
+    {
+      "u": "entity_ac5c0946",
+      "v": "entity_6cafc183",
+      "key": "rel_4019ef2b",
+      "relation_id": "rel_4019ef2b",
+      "subject_id": "entity_ac5c0946",
+      "relation": "status_is",
+      "object_id": "entity_6cafc183",
+      "valid_from": "2024-01-03",
+      "valid_to": null,
+      "status": "active",
+      "provenance": "meeting_002_segs_7-9: the motion carries the clerk file is postponed until July 12.",
+      "confidence": 1.0
+    }
+  ]
+}

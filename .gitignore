@@ -1,0 +1,21 @@
+
+# Virtual environment
+.venv/
+
+# Environment variables and secrets
+.env
+.env.*
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Demo cache
+demo/__pycache__/
+demo/*__pycache__*
+
+# Demo extraction logs (any filename)
+demo/extraction_logs*/
+demo/extraction_logs_*
+
+extraction_logs*/
