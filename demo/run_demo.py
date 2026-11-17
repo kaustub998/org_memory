@@ -8,12 +8,17 @@ from core.graph_store import TemporalGraphStore
 from core.pipeline import ingest_meeting
 from core.retrieval import retrieve_hybrid
 from core.qa import answer_question
-from demo.synthetic_meetings import MEETINGS, DEMO_QUESTIONS
+from data.meetingbank_loader import load_meetingbank
 from tqdm import tqdm
 from core.llm_connectors import build_connector
 
 STORE_PATH = os.path.join(os.path.dirname(__file__), "demo_graph.json")
 LOG_PATH = os.path.join(os.path.dirname(__file__), "extraction_log.jsonl")
+DATA_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "meetingbank_slice_merged.json")
+DEMO_QUESTIONS = [
+    "What ordinances or bills were discussed across these meetings?",
+    "Which council members or officials are mentioned, and what did they do?",
+]
 
 def main():
     if os.path.exists(STORE_PATH):
@@ -24,13 +29,14 @@ def main():
 
     provider = os.environ.get('LLM_PROVIDER', 'anthropic')
     connector = build_connector(provider)
+    meetings = load_meetingbank(DATA_PATH)[:3]
         
 
     print("=" * 70)
     print("PHASE 1 -- INGESTING MEETINGS")
     print("=" * 70)
     with open(LOG_PATH, "a") as log_file:
-        for m in tqdm(MEETINGS, desc="Meetings"):
+        for m in tqdm(meetings, desc="Meetings"):
             report = ingest_meeting(store, m["transcript"], m["meeting_id"], m["date"], connector=connector)
             log_file.write(json.dumps({
                 "step": "meeting_summary",

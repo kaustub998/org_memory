@@ -106,6 +106,7 @@ class LLMConnector(ABC):
 class AnthropicConnector(LLMConnector):
     def __init__(self, model: str = "claude-sonnet-4-6", api_key: str | None = None):
         from anthropic import Anthropic
+        super().__init__()
         self._client = Anthropic(api_key=api_key or os.environ.get("ANTHROPIC_API_KEY"))
         self.model = model
         self.name = f"anthropic:{model}"
@@ -117,6 +118,11 @@ class AnthropicConnector(LLMConnector):
             messages=[{"role": "user", "content": user}],
         )
         if getattr(resp, "usage", None):
+            self._record_usage(
+                input_tokens=resp.usage.input_tokens,
+                output_tokens=resp.usage.output_tokens,
+                model=self.model,
+            )
             self._log_usage("anthropic", f"input={resp.usage.input_tokens} output={resp.usage.output_tokens}")
         return "".join(b.text for b in resp.content if b.type == "text").strip()
 

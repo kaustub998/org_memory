@@ -12,6 +12,12 @@ This project builds an organizational memory layer over meeting transcripts and 
 
 The system is designed to be modular so the research-heavy parts can later be upgraded without reworking the entire pipeline.
 
+The practical execution paths are:
+
+- `demo/run_demo_offline.py`: no API key, no Neo4j, deterministic pipeline verification.
+- `demo/run_demo.py`: local MeetingBank slice, real LLM, JSON graph output.
+- `demo/run_real_meetingbank.py`: Hugging Face MeetingBank, real LLM, Neo4j graph output.
+
 ---
 
 ## 2. High-Level Pipeline
@@ -37,14 +43,14 @@ In code, the main orchestration is in [core/pipeline.py](../core/pipeline.py).
 
 Sources may include:
 
-- synthetic council transcripts,
+- the inline offline demo fixture,
 - real MeetingBank records,
 - future organizational documents or meeting logs.
 
 The loader normalizes records into a consistent format. See:
 
 - [data/meetingbank_loader.py](../data/meetingbank_loader.py)
-- [demo/synthetic_meetings.py](../demo/synthetic_meetings.py)
+- [demo/run_demo_offline.py](../demo/run_demo_offline.py)
 
 Expected normalized shape:
 
@@ -53,6 +59,13 @@ Expected normalized shape:
 - summary
 - date
 - city
+
+The real MeetingBank loader supports two modes:
+
+- local JSON/JSONL loading through `load_meetingbank(path)`,
+- Hugging Face loading through `load_meetingbank_hf(...)`.
+
+The Hugging Face release often provides segment-level records rather than clean whole-meeting records, so the loader can merge related segments before ingestion.
 
 ---
 
@@ -220,6 +233,8 @@ The flow is:
 5. The QA model answers using only the evidence list
 6. The answer cites the matching snippets / related meetings
 
+For the Neo4j path, the same resolved entities and temporal relation operations are also mirrored into Neo4j so the graph can be inspected with Cypher.
+
 ---
 
 ## 5. Key Architectural Principle
@@ -249,21 +264,40 @@ The project is designed so these can be upgraded in Phase 2 without disturbing t
 
 ## 7. Provider and Backend Abstractions
 
-The system supports multiple LLM providers and multiple embedding backends through abstraction layers:
+The system supports multiple LLM providers, multiple embedding backends, and multiple graph stores through abstraction layers:
 
 - [core/llm_connectors.py](../core/llm_connectors.py)
 - [core/embeddings.py](../core/embeddings.py)
+- [core/graph_store.py](../core/graph_store.py)
+- [core/graph_store_neo4j.py](../core/graph_store_neo4j.py)
+- [core/graph_store_factory.py](../core/graph_store_factory.py)
 
 This allows:
 
 - switching between Anthropic/OpenAI/Groq/Gemini/etc.,
 - fallback between providers,
 - using local sentence-transformers or OpenAI embeddings,
+- using JSON storage for local runs or Neo4j for persistent graph runs,
 - keeping the rest of the pipeline unchanged.
+
+The Neo4j backend intentionally uses a single relationship type, `:RELATION`, and stores the semantic relation name as a property. This keeps arbitrary LLM relation strings out of the Neo4j schema.
 
 ---
 
-## 8. Recommended Mental Model
+## 8. Run Matrix
+
+| Command | LLM required | Neo4j required | Purpose |
+|---|---:|---:|---|
+| `.\.venv\Scripts\python.exe .\demo\run_demo_offline.py` | No | No | Verify downstream graph pipeline with mocked extraction |
+| `.\.venv\Scripts\python.exe .\demo\run_demo.py` | Yes | No | Run included local slice with JSON graph output |
+| `.\.venv\Scripts\python.exe .\scripts\test_neo4j_connection.py` | No | Yes | Confirm live Neo4j connectivity and schema writes |
+| `.\.venv\Scripts\python.exe .\demo\run_real_meetingbank.py` | Yes | Yes | Run real Hugging Face MeetingBank ingestion into Neo4j |
+
+Plain `python .\demo\run_real_meetingbank.py` is only equivalent if the virtual environment has already been activated.
+
+---
+
+## 9. Recommended Mental Model
 
 Think of the project as a temporal organizational memory stack:
 
@@ -277,7 +311,7 @@ This is essentially a graph-backed RAG system for organizational knowledge.
 
 ---
 
-## 9. Where to Look When Changing the System
+## 10. Where to Look When Changing the System
 
 - extraction logic: [core/extraction.py](../core/extraction.py)
 - entity matching: [core/entity_resolution.py](../core/entity_resolution.py)
@@ -289,7 +323,7 @@ This is essentially a graph-backed RAG system for organizational knowledge.
 
 ---
 
-## 10. Project Direction
+## 11. Project Direction
 
 The current version is a working baseline that proves the architecture can operate end-to-end. The next research-oriented stage should improve:
 

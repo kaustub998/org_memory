@@ -1,327 +1,352 @@
-# Organizational Memory Pipeline — Phase 1 (Working Baseline)
+# Organizational Memory Pipeline
 
-This is the "make it work end-to-end first" version described in your proposal:
-a full Extraction → Entity Resolution → Update Policy → Temporal Graph Store →
-Hybrid Retrieval → QA pipeline, where **Entity Resolution** and the **Graph
-Update Policy** are deliberately naive placeholders. Everything else
-(extraction, the graph schema, hybrid retrieval, QA) is built to full spec
-now, since those aren't your two research contributions.
+This project builds a temporal organizational memory graph from meeting transcripts. It extracts entities and facts with an LLM, resolves mentions into graph entities, applies temporal update rules, stores facts in a graph backend, retrieves relevant evidence, and answers questions from that evidence.
 
-## Structure
+The current version is a working Phase 1 baseline. Extraction, storage, retrieval, provider connectors, and QA are wired end to end. Entity resolution and update policy are intentionally simple so they can become the Phase 2 research components.
 
-```
+## Project Layout
+
+```text
 org_memory/
   core/
-    types.py             shared dataclasses (Entity, Fact, Relation)
-    extraction.py         LLM-based extraction (full spec)
-    entity_resolution.py  BASIC BLOCK — single-signal matching, precision-first
-    graph_store.py         temporal graph (NetworkX + JSON; Neo4j-shaped schema)
-    update_policy.py      BASIC BLOCK — fixed rule table (INSERT/UPDATE/SUPERSEDE only)
-    retrieval.py           hybrid graph + TF-IDF vector retrieval (full spec)
-    qa.py                  LLM answer generation from retrieved evidence (full spec)
-    pipeline.py            orchestrator: wires all layers together per meeting
+    types.py               Shared dataclasses for entities, facts, and relations
+    extraction.py           LLM JSON extraction from transcript chunks
+    entity_resolution.py    Phase 1 resolver: exact/alias/TF-IDF matching
+    update_policy.py        Phase 1 temporal rule table: INSERT/UPDATE/SUPERSEDE
+    graph_store.py          NetworkX + JSON temporal graph backend
+    graph_store_neo4j.py    Neo4j temporal graph backend
+    graph_store_factory.py  Backend factory for JSON or Neo4j
+    embeddings.py           Local/OpenAI embedding wrapper with TF-IDF fallback
+    retrieval.py            Hybrid graph + vector evidence retrieval
+    qa.py                   Evidence-grounded answer generation
+    pipeline.py             Main ingest orchestration
+
   data/
-    meetingbank_loader.py  loader for your MeetingBank JSON/JSONL slice
+    meetingbank_loader.py          Local/Hugging Face MeetingBank loaders
+    meetingbank_slice_merged.json  Included local MeetingBank-style slice
+
   demo/
-    synthetic_meetings.py  3 synthetic council meetings exercising INSERT/UPDATE/SUPERSEDE
-    run_demo.py            full pipeline run (needs ANTHROPIC_API_KEY)
-    run_demo_offline.py    deterministic verification (extraction mocked, no API key needed)
+    run_demo_offline.py       Deterministic no-key verification
+    run_demo.py               Local slice + real LLM + JSON graph
+    run_real_meetingbank.py   Hugging Face MeetingBank + real LLM + Neo4j
+    multi_llm_demo.py         Compare configured LLM providers
+
+  scripts/
+    test_neo4j_connection.py  Live Neo4j connectivity smoke test
+
+  tests/
+    Offline unit/adapter tests
 ```
 
-## Running it
+`demo/synthetic_meetings.py` is not required. The offline demo keeps its small fixture inline.
 
-### Output Logging and Progress Bar
+## Python Environment
 
-Recent updates allow you to log all extracted entities, relations, pipeline facts, and summary information for each meeting in a run to a dedicated output file (e.g., `extraction_log.jsonl`).
+Use the project virtual environment on Windows PowerShell:
 
-A progress bar is also displayed during the ingestion of many meetings, letting you monitor processing status (using either `tqdm` or a built-in tracker).
-
-**How to enable and use these features:**
-- By default: running any demo or ingestion script will log each meeting's extracted output to `extraction_log.jsonl` in the current directory.
-- Each line is a JSON object representing one meeting's extraction (meeting metadata, entities, relations, pipeline operations, etc.).
-- You can inspect this file in any text editor or process results programmatically.
-- The progress bar appears in your terminal and tracks per-meeting progress during processing.
-
-**To view structured outputs later:**
-- Open `extraction_log.jsonl` with a text editor or tools like jq, or load with pandas for analysis.
-- Each log line contains all outputs for one meeting, useful for debugging, reviewing, or building a result dashboard.
-
-### 1. Offline verification (no API key needed) — run this first
-```bash
-pip install -r requirements.txt
-python demo/run_demo_offline.py
-```
-This mocks the LLM extraction call and proves out everything downstream:
-entity resolution, the update policy's INSERT/UPDATE/SUPERSEDE logic, the
-temporal graph store, and hybrid retrieval. It will also print an "EXPECTED
-GAP" diagnostic showing the naive resolver failing to merge "Sarah" with
-"Sarah Chen" — keep that as a baseline data point for your results chapter;
-it's exactly the failure mode Phase 2's contextual resolver should fix.
-
-### 2. Full pipeline with a real model
-```bash
-export ANTHROPIC_API_KEY=sk-ant-...
-python demo/run_demo.py
-```
-Same three synthetic meetings, but extraction and answer generation go
-through the real Claude API instead of mocks.
-
-### 3. Real MeetingBank data (already included as an example)
-
-`data/meetingbank_slice_merged.json` is a real 11-meeting slice, built from
-a 20-segment Hugging Face download of `huuuyeah/meetingbank` via
-`data/merge_segments.py`. **Important:** MeetingBank's HF release returns
-*segment*-level records, not whole meetings -- several segments often share
-one parent-meeting summary because they're different transcript slices of
-the same agenda item. Run the merger first if you pull a fresh slice:
-
-```bash
-python data/merge_segments.py your_raw_slice.json your_merged_slice.json
+```powershell
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
 ```
 
-This groups segments by identical summary text, concatenates their
-transcripts in order, and assigns **one placeholder date per merged
-meeting** (not per segment) -- otherwise segments of the same session get
-spread across fake different days. Real MeetingBank records don't carry a
-`date` field at all, so these are still placeholders; replace them with real
-dates if you can find them (e.g. from the meeting video/agenda metadata),
-since validity intervals are meaningless without real chronology.
+Or run commands through the venv explicitly:
 
-Then ingest it:
-```bash
-export ANTHROPIC_API_KEY=sk-ant-...
-python demo/run_real_meetingbank.py
+```powershell
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe .\demo\run_demo_offline.py
 ```
 
-Note on this specific 20-segment sample: it happens to contain 11 *distinct*
-agenda items with essentially no entity recurrence across items (different
-bills, different people). That's fine for testing extraction quality and
-single-meeting INSERT behavior, but it won't exercise cross-meeting
-entity resolution or SUPERSEDE the way the synthetic demo does -- for that,
-you need a slice where the SAME council members/projects recur across
-multiple sessions (e.g. pull a larger slice filtered to one city, sorted
-by date, so the same people/departments show up repeatedly).
+Plain `python .\demo\run_real_meetingbank.py` only works after the venv is activated or if your global Python has all requirements installed. If it fails with `ModuleNotFoundError`, you are not using the environment that has this project’s dependencies.
 
-### 4. Plugging in a different MeetingBank slice
-```python
-from data.meetingbank_loader import load_meetingbank
-from core.graph_store import TemporalGraphStore
-from core.pipeline import ingest_meeting
+## Configuration
 
-store = TemporalGraphStore("my_graph.json")
-meetings = load_meetingbank("path/to/your_meetingbank_slice.json")
-for m in meetings:
-    ingest_meeting(store, m["transcript"], m["meeting_id"], m["date"])
-```
-MeetingBank's HF/Zenodo releases use `id` / `summary` / `transcript` fields.
-If your slice has a `date` field, the loader picks it up automatically —
-if not, it fabricates a placeholder sequential date so the temporal graph
-still has something to sort on. **Replace the placeholder with real dates
-before running any real evaluation** — the whole point of the temporal
-graph is validity intervals, and those are meaningless without real dates.
-Long transcripts (MeetingBank averages ~28k tokens) are automatically
-chunked by `pipeline.py` before extraction.
+Create or update `.env` in the project root. `.env` is ignored by git and should hold secrets.
 
-## What's naive on purpose (Phase 1) vs. what's full-spec
+Example:
 
-| Layer | Phase 1 status | Notes |
-|---|---|---|
-| Extraction | Full spec | Not a research component |
-| Entity Resolution | **Naive** | Exact/alias match + single TF-IDF signal, fixed threshold, no LLM verification, no DEFER |
-| Update Policy | **Naive** | Fixed rule table: INSERT / UPDATE / SUPERSEDE only, "most recent wins", no MERGE/PRESERVE/DEFER, no conflict adjudication |
-| Graph Store | Full spec (schema) | NetworkX+JSON now; swap for Neo4j later without touching callers |
-| Hybrid Retrieval | Full spec | TF-IDF stands in for a real embedding model (this sandbox can't download embedding weights — swap `retrieve_vector()`'s TfidfVectorizer for a sentence-transformer or API embedding call in your own environment) |
-| QA | Full spec | Straightforward evidence-grounded generation |
+```text
+LLM_PROVIDER=openai
+OPENAI_API_KEY=sk-...
 
-## Neo4j (replacing the JSON graph store)
+NEO4J_URI=bolt://localhost:7687
+NEO4J_USER=neo4j
+NEO4J_PASSWORD=your_neo4j_password
+NEO4J_DATABASE=neo4j
 
-`core/graph_store_neo4j.py` is a drop-in replacement for
-`core/graph_store.py` — same public methods (`upsert_entity`,
-`add_relation`, `find_active_relation`, etc.), so `pipeline.py` and
-`retrieval.py` work with either backend unchanged. Verified two ways
-before you touch a real database:
-
-1. `tests/test_neo4j_adapter_offline.py` — runs the adapter's Cypher/
-   data-mapping logic against a fake in-memory driver (no network, no
-   real Neo4j). Confirms the Python-side logic is internally consistent.
-2. `scripts/test_neo4j_connection.py` — run this against your **real**
-   Neo4j Desktop instance to confirm actual connectivity and that the
-   Cypher is valid against a live server. This is the one that actually
-   matters — the offline test can't catch real syntax errors.
-
-Setup:
-```bash
-# 1. In Neo4j Desktop: create a local DBMS (Neo4j 5.x), start it,
-#    note the Bolt URI (usually bolt://localhost:7687) and password.
-pip install neo4j
-
-export NEO4J_URI=bolt://localhost:7687
-export NEO4J_USER=neo4j
-export NEO4J_PASSWORD=your_password_here
-
-python tests/test_neo4j_adapter_offline.py   # sanity check first, no DB needed
-python scripts/test_neo4j_connection.py       # then the real connectivity test
+EMBEDDING_BACKEND=local
 ```
 
-Once both pass, switch it into the pipeline:
-```python
-from core.graph_store_neo4j import Neo4jGraphStore
-store = Neo4jGraphStore(
-    uri="bolt://localhost:7687", user="neo4j", password="your_password_here"
-)
-# everything else (ingest_meeting, retrieve_hybrid, ...) is unchanged
+Supported `LLM_PROVIDER` values are defined in `core/llm_connectors.py`:
+
+```text
+anthropic, openai, groq, gemini, deepseek, openrouter, zhipu
 ```
 
-Two design notes worth knowing:
-- Relationships all use one generic Neo4j type `:RELATION`, with the
-  *semantic* relation name (e.g. `"leads"`, `"reports_to"`) stored as a
-  property, not as the Neo4j relationship type itself. This avoids
-  building relationship types from dynamic/untrusted strings and makes
-  filtering by relation a plain property match.
-- `save()` on `Neo4jGraphStore` is a no-op — every write already commits
-  immediately, unlike the JSON store where `save()` flushes to disk.
+Each provider needs its matching key:
 
-## Real embeddings (replacing TF-IDF in retrieval)
-
-`core/embeddings.py` wraps `sentence-transformers` (`all-MiniLM-L6-v2` by
-default) and `retrieval.py`'s `retrieve_vector()` now uses it automatically
-**when available**, falling back to TF-IDF with a printed warning if the
-model can't load (no internet on first run to fetch weights, package not
-installed, etc.) — this sandbox can't download model weights, so it always
-falls back here; on your machine, once you `pip install sentence-transformers`
-with internet access, it should switch over automatically. Check
-`core.retrieval.EMBEDDING_BACKEND` (or just watch the startup message) to
-confirm which one is actually active before trusting any retrieval-quality
-comparisons — TF-IDF silently taking over would otherwise look identical
-from the outside.
-
-**Note:** `entity_resolution.py`'s TF-IDF signal was deliberately left
-alone — upgrading that one to embeddings is part of your Phase 2
-contextual resolver (it becomes one of the multiple signals: embedding +
-neighbor + relation + org-context), not infrastructure. Only the
-retrieval-layer TF-IDF was infra, and that one's now upgraded.
-
-## Multiple LLM providers / free API keys (core/llm_connectors.py)
-
-`extraction.py` and `qa.py` now accept an injected `connector` (defaults
-to Claude if you don't pass one), so you can run the pipeline through
-any provider, mix providers, or fall back from one to another when a
-free tier's rate limit gets hit. Two connector classes cover almost
-everything:
-
-- `AnthropicConnector` — native Claude API.
-- `OpenAICompatibleConnector` — everything else. Groq, real OpenAI,
-  Google Gemini, DeepSeek, OpenRouter, and Zhipu (GLM) all expose the
-  *same* OpenAI chat-completions shape, so one class handles all of them
-  by swapping `base_url` + `model` + API key. See `PROVIDER_PRESETS` in
-  `core/llm_connectors.py` for the exact URLs/models/env-var names —
-  edit that dict if a free tier's terms change.
-
-**Important correction if you're planning to use a ChatGPT Plus key:**
-a Plus subscription (chat.openai.com) does **not** include API credits.
-API access is billed separately, pay-as-you-go, through a key generated
-at platform.openai.com — your Plus login won't work as `OPENAI_API_KEY`
-here unless that account also has API billing set up separately.
-
-Free options that work as-is (no card required for most):
-| Provider | Env var | Get a key |
-|---|---|---|
-| Groq | `GROQ_API_KEY` | console.groq.com/keys |
-| Google Gemini | `GEMINI_API_KEY` | aistudio.google.com/apikey |
-| Zhipu (GLM) | `ZHIPU_API_KEY` | open.bigmodel.cn |
-| DeepSeek | `DEEPSEEK_API_KEY` | platform.deepseek.com (free credits for new signups) |
-| OpenRouter | `OPENROUTER_API_KEY` | openrouter.ai/keys (filter models by `:free`) |
-
-Usage:
-```python
-from core.llm_connectors import build_connector, ConnectorPool
-from core.pipeline import ingest_meeting
-
-# single provider, explicit
-groq = build_connector("groq")
-ingest_meeting(store, transcript, meeting_id, date, connector=groq)
-
-# fallback chain: try Claude, then Groq, then Gemini if earlier ones fail/rate-limit
-pool = ConnectorPool([build_connector("anthropic"), build_connector("groq"), build_connector("gemini")])
-response, used = pool.complete_with_fallback(system_prompt, user_prompt)
-
-# run the SAME prompt on every provider you have a key for, compare outputs
-results = pool.complete_all(system_prompt, user_prompt)
+```text
+ANTHROPIC_API_KEY
+OPENAI_API_KEY
+GROQ_API_KEY
+GEMINI_API_KEY
+DEEPSEEK_API_KEY
+OPENROUTER_API_KEY
+ZHIPU_API_KEY
 ```
 
-Two test scripts:
-- `tests/test_connector_pool_offline.py` — fake connectors, no keys/network needed, checks fallback and ensemble logic.
-- `demo/multi_llm_demo.py` — real providers; builds a connector for every API key you actually have set as an env var and runs one extraction prompt through all of them so you can compare.
+ChatGPT Plus is not an API key. For `LLM_PROVIDER=openai`, use a real platform OpenAI API key with API billing enabled.
 
-## The three connectors you asked for
+## What To Run
+
+### 1. Offline Verification
+
+Run this first. It requires no LLM key and no Neo4j server.
+
+```powershell
+.\.venv\Scripts\python.exe .\demo\run_demo_offline.py
+```
+
+This verifies entity insertion, temporal INSERT/SUPERSEDE behavior, graph storage, hybrid retrieval, and mocked QA output.
+
+It also prints an expected Phase 1 gap: the naive resolver keeps `Sarah` and `Sarah Chen` as separate entities. That is intentional and useful as a baseline for the future contextual resolver.
+
+### 2. Local Slice With Real LLM And JSON Graph
+
+This uses `data/meetingbank_slice_merged.json`, calls the configured LLM, writes a JSON graph, and does not require Neo4j.
+
+```powershell
+.\.venv\Scripts\python.exe .\demo\run_demo.py
+```
+
+Requirements:
+
+- `LLM_PROVIDER` set, or default provider available
+- matching provider API key in `.env`
+
+Output:
+
+- `demo/demo_graph.json`
+- `demo/extraction_log.jsonl`
+- terminal QA output
+
+### 3. Real MeetingBank From Hugging Face With Neo4j
+
+This is the command you asked about:
+
+```powershell
+python .\demo\run_real_meetingbank.py
+```
+
+It will work only if `python` is the activated venv Python or a Python with all dependencies installed. The safer command is:
+
+```powershell
+.\.venv\Scripts\python.exe .\demo\run_real_meetingbank.py
+```
+
+Requirements:
+
+- project dependencies installed
+- one configured LLM provider key
+- Neo4j Desktop or server running
+- correct `NEO4J_URI`, `NEO4J_USER`, `NEO4J_PASSWORD`, and `NEO4J_DATABASE`
+- internet access for Hugging Face dataset loading, unless already cached
+
+Before running the real ingest, test Neo4j:
+
+```powershell
+.\.venv\Scripts\python.exe .\scripts\test_neo4j_connection.py
+```
+
+Then run:
+
+```powershell
+.\.venv\Scripts\python.exe .\demo\run_real_meetingbank.py
+```
+
+If Neo4j is not running, the script fails early with a clear message telling you to start Neo4j or check the connection settings.
+
+## Testing
+
+Run all tests:
+
+```powershell
+.\.venv\Scripts\python.exe -m pytest -q
+```
+
+Current expected result:
+
+```text
+7 passed
+```
+
+Compile check:
+
+```powershell
+.\.venv\Scripts\python.exe -m compileall core demo data scripts tests
+```
+
+Standalone checks:
+
+```powershell
+.\.venv\Scripts\python.exe .\tests\test_connector_pool_offline.py
+.\.venv\Scripts\python.exe .\tests\test_connector_logging_offline.py
+.\.venv\Scripts\python.exe .\tests\test_neo4j_adapter_offline.py
+```
+
+## Pipeline Flow
+
+The ingest flow is:
+
+1. Load a transcript record.
+2. Chunk long transcripts in `core/pipeline.py`.
+3. Extract structured JSON entities and facts in `core/extraction.py`.
+4. Resolve mentions in `core/entity_resolution.py`.
+5. Apply temporal graph updates in `core/update_policy.py`.
+6. Persist to JSON or Neo4j graph store.
+7. Retrieve evidence with `core/retrieval.py`.
+8. Answer with `core/qa.py`.
+
+Fact shape:
+
+```text
+subject --relation--> object
+```
+
+Relation metadata:
+
+```text
+valid_from, valid_to, status, provenance, confidence
+```
+
+## Storage Backends
+
+### JSON Backend
+
+`TemporalGraphStore` in `core/graph_store.py` stores the graph in memory and saves to JSON.
+
+Use it for offline verification, small local experiments, and debugging pipeline behavior.
+
+### Neo4j Backend
+
+`Neo4jGraphStore` in `core/graph_store_neo4j.py` writes entities and temporal relations to Neo4j.
+
+Use it for real graph inspection, Cypher queries, larger ingestion runs, and visualization in Neo4j Browser or Bloom.
+
+The Neo4j backend uses:
+
+- `(:Entity)` nodes
+- generic `[:RELATION]` edges
+- semantic relation names stored as the `relation` property
+
+That design avoids generating dynamic relationship types from LLM output and keeps querying simpler.
+
+## LLM Providers
+
+All LLM calls go through `core/llm_connectors.py`.
+
+Single provider example:
 
 ```python
 from core.llm_connectors import build_connector
 
-claude     = build_connector("anthropic")   # ANTHROPIC_API_KEY
-chatgpt    = build_connector("openai")      # OPENAI_API_KEY -- real platform.openai.com key, NOT your ChatGPT Plus login
-openrouter = build_connector("openrouter")  # OPENROUTER_API_KEY -- pick any model, incl. free ones tagged ":free"
+connector = build_connector("openai")
 ```
 
-Every connector call (all three, and any other provider in `PROVIDER_PRESETS`)
-prints which model it's calling and the token usage it got back, e.g.:
-```
-[llm_connector] calling openrouter | model=meta-llama/llama-3.3-70b-instruct:free
-[llm_connector] openrouter usage: prompt=142 completion=58 total=200
-```
-OpenRouter specifically can auto-route your request to a *different* model
-than the one you asked for (fallback/load-balancing on their end) — the
-connector checks the response's actual `model` field against what you
-requested and prints an extra `NOTE` line if they don't match, so you're
-never silently billed for or evaluating a different model than you think.
-Verified with mocked SDK responses in `tests/test_connector_logging_offline.py`.
+Fallback/ensemble support:
 
-## Neo4j "connector" (storage backend factory)
-
-Same factory pattern, for storage instead of LLMs:
 ```python
-from core.graph_store_factory import build_graph_store
+from core.llm_connectors import build_connector, ConnectorPool
 
-store = build_graph_store("json", path="my_graph.json")       # NetworkX + JSON
-store = build_graph_store("neo4j", uri="bolt://localhost:7687",
-                           user="neo4j", password="...")       # real Neo4j Desktop
+pool = ConnectorPool([
+    build_connector("groq"),
+    build_connector("gemini"),
+    build_connector("openrouter"),
+])
 ```
-Prints which backend it built (`[graph_store_factory] backend=neo4j uri=... database=...`),
-and `pipeline.py`/`retrieval.py` don't care which one you pass in — same
-interface parity already verified in `tests/test_neo4j_adapter_offline.py`.
 
-## Is the embedding model the same as the ChatGPT connector?
+Every connector logs the provider, model, and usage information when the provider returns token usage.
 
-**No** — and it's worth being precise about this. `gpt-4o-mini` (what the
-`"openai"` connector uses for chat) and OpenAI's embedding models are
-different models, served by a different endpoint, billed separately —
-"ChatGPT" and "embeddings" are not the same product even within one
-provider. What was already in `core/embeddings.py` before this change was
-a **local** model (`sentence-transformers`, `all-MiniLM-L6-v2`) that has
-nothing to do with any API key at all — it runs on your machine for free.
+## Embeddings
 
-You now have both as explicit options, switched via an environment variable:
-```bash
-export EMBEDDING_BACKEND=local    # sentence-transformers, free, offline (default)
-export EMBEDDING_BACKEND=openai   # OpenAI's text-embedding-3-small, reuses OPENAI_API_KEY, billed per call
+`core/embeddings.py` supports:
+
+- local sentence-transformers: `EMBEDDING_BACKEND=local`
+- OpenAI embeddings: `EMBEDDING_BACKEND=openai`
+- TF-IDF fallback if embeddings cannot initialize
+
+Default:
+
+```text
+EMBEDDING_BACKEND=local
 ```
-If you set `EMBEDDING_BACKEND=openai` but don't have `OPENAI_API_KEY` set
-(or the package/model can't load), it prints why and falls back to local
-automatically — same fail-soft pattern as everything else here. Check the
-startup message, or `core.embeddings.ACTIVE_BACKEND`, to confirm which one
-is actually active.
 
-## Phase 2 — where the research work plugs in
+Local embeddings may download model weights on first run. If that fails, retrieval falls back to TF-IDF and prints a warning.
 
-- **`entity_resolution.py`**: replace `BasicEntityResolver` with a multi-signal
-  scorer (name/alias, embedding, neighbor overlap, relation context,
-  organizational context), add confidence thresholds with LLM verification
-  for ambiguous cases, and add DEFER/FLAG instead of forced binary merge/new.
-- **`update_policy.py`**: replace the fixed rule table with the full
-  INSERT/UPDATE/MERGE/SUPERSEDE/PRESERVE/DEFER decision logic, combining
-  rules with LLM reasoning for nuanced conflicting evidence.
-- Both are swappable in isolation — `pipeline.py` only calls
-  `resolver.resolve(...)` and `apply_fact(...)`, so neither change touches
-  extraction, storage, retrieval, or QA. This is what makes your ablation
-  study (naive vs. full resolver, naive vs. full update policy) a clean,
-  apples-to-apples comparison later.
+## Phase 1 Limitations
+
+These limitations are intentional:
+
+- Entity resolution is conservative and can miss short-name matches.
+- Update policy is a fixed rule table.
+- Conflict handling is `most recent wins`.
+- MeetingBank records often lack real dates, so placeholder dates may be used.
+- The included MeetingBank slice may not contain enough recurring entities to fully exercise cross-meeting resolution.
+
+These are the intended Phase 2 improvement areas:
+
+- contextual entity resolution
+- multi-signal identity scoring
+- conflict-aware update policy
+- DEFER/PRESERVE/MERGE decisions
+- stronger temporal reasoning
+- improved evidence ranking
+
+## Troubleshooting
+
+`ModuleNotFoundError: No module named 'tqdm'`
+
+You are not using the venv. Run:
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+```
+
+`Set NEO4J_PASSWORD before running...`
+
+Add `NEO4J_PASSWORD` to `.env` or set it in PowerShell:
+
+```powershell
+$env:NEO4J_PASSWORD="your_password"
+```
+
+`Could not connect to Neo4j`
+
+Start Neo4j Desktop or server, then verify:
+
+```powershell
+.\.venv\Scripts\python.exe .\scripts\test_neo4j_connection.py
+```
+
+`No API key provided`
+
+Set `LLM_PROVIDER` and the matching API key in `.env`.
+
+`Unable to retrieve routing information`
+
+Neo4j is not reachable at the configured URI, or the URI scheme is wrong. For a local single database, prefer:
+
+```text
+NEO4J_URI=bolt://localhost:7687
+```
+
+## Recommended Development Loop
+
+```powershell
+.\.venv\Scripts\python.exe .\demo\run_demo_offline.py
+.\.venv\Scripts\python.exe -m pytest -q
+.\.venv\Scripts\python.exe .\scripts\test_neo4j_connection.py
+.\.venv\Scripts\python.exe .\demo\run_real_meetingbank.py
+```
+
+That order separates local code issues from live API and database issues.

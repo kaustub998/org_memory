@@ -181,3 +181,45 @@ class Neo4jGraphStore:
             provenance=edge.get("provenance", ""),
             confidence=edge.get("confidence", 1.0),
         )
+
+    # ---------- usage & error logging additions ----------
+
+    def insert_usage_stat(self, usage_stat: dict):
+        with self.driver.session(database=self.database) as session:
+            session.run(
+                "MERGE (u:UsageStat {meeting_id: $meeting_id}) "
+                "SET u.input_tokens = $input_tokens, "
+                "    u.output_tokens = $output_tokens, "
+                "    u.total_tokens = $total_tokens, "
+                "    u.calls = $calls, "
+                "    u.models_used = $models_used",
+                meeting_id=usage_stat.get("meeting_id"),
+                input_tokens=usage_stat.get("input_tokens", 0),
+                output_tokens=usage_stat.get("output_tokens", 0),
+                total_tokens=usage_stat.get("total_tokens", 0),
+                calls=usage_stat.get("calls", 0),
+                models_used=usage_stat.get("models_used", []),
+            )
+
+    def insert_error_log(self, error_log: dict):
+        with self.driver.session(database=self.database) as session:
+            session.run(
+                "CREATE (el:ErrorLog {"
+                " meeting_id: $meeting_id, chunk_idx: $chunk_idx, error: $error, raw_output: $raw_output })",
+                meeting_id=error_log.get("meeting_id"),
+                chunk_idx=error_log.get("chunk_idx"),
+                error=error_log.get("error"),
+                raw_output=error_log.get("raw_output"),
+            )
+
+    def insert_qa_log(self, qa_log: dict):
+        with self.driver.session(database=self.database) as session:
+            session.run(
+                "CREATE (qa:QALog {"
+                " meeting_id: $meeting_id, question: $question, answer: $answer, evidence_retrieved: $evidence_retrieved })",
+                meeting_id=qa_log.get("meeting_id"),
+                question=qa_log.get("question"),
+                answer=qa_log.get("answer"),
+                evidence_retrieved=qa_log.get("evidence_retrieved"),
+            )
+

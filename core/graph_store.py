@@ -17,10 +17,10 @@ from .types import GraphEntity, GraphRelation, new_id
 
 
 class TemporalGraphStore:
-    def __init__(self, path: str = "graph_store.json"):
+    def __init__(self, path: Optional[str] = "graph_store.json"):
         self.path = path
         self.g = nx.MultiDiGraph()
-        if os.path.exists(path):
+        if path and os.path.exists(path):
             self._load()
 
     # ---------- entities ----------
@@ -103,6 +103,8 @@ class TemporalGraphStore:
     # ---------- persistence ----------
 
     def save(self):
+        if not self.path:
+            return
         payload = {
             "nodes": [{"id": n, **d} for n, d in self.g.nodes(data=True)],
             "edges": [{"u": u, "v": v, "key": k, **d} for u, v, k, d in self.g.edges(keys=True, data=True)],

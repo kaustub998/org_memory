@@ -20,8 +20,31 @@ from core.retrieval import retrieve_hybrid
 
 STORE_PATH = os.path.join(os.path.dirname(__file__), "demo_graph_offline.json")
 
+MEETINGS = [
+    {
+        "meeting_id": "council_2024_01_10",
+        "date": "2024-01-10",
+        "transcript": "Sarah Chen has been appointed as the Project Manager for the Riverfront Park Renewal project. She will report directly to Mark Ibsen, Director of Public Works.",
+    },
+    {
+        "meeting_id": "council_2024_03_14",
+        "date": "2024-03-14",
+        "transcript": "Sarah briefed the council that the Riverfront project moved from planning to the construction bidding phase. She still reports to the Director of Public Works.",
+    },
+    {
+        "meeting_id": "council_2024_07_22",
+        "date": "2024-07-22",
+        "transcript": "Sarah Chen has been promoted to Senior Program Director. David Nwosu will take over as Project Manager for the Riverfront Park Renewal project.",
+    },
+]
 
-def _mock_extract(transcript_text, meeting_id, meeting_date, connector=None):
+DEMO_QUESTIONS = [
+    "Who manages the Riverfront Park Renewal project?",
+    "What is Sarah Chen's current role?",
+]
+
+
+def _mock_extract(transcript_text, meeting_id, meeting_date, connector=None, **kwargs):
     """Hand-written stand-in for the LLM extraction call, keyed by meeting_id."""
     if meeting_id == "council_2024_01_10":
         entities = [
@@ -59,7 +82,15 @@ def _mock_extract(transcript_text, meeting_id, meeting_date, connector=None):
         ]
     else:
         entities, facts = [], []
-    return entities, facts
+    return entities, facts, {
+        "meeting_id": meeting_id,
+        "chunk_idx": kwargs.get("chunk_idx"),
+        "status": "success",
+        "raw_output": "[mocked extraction]",
+        "entities_cnt": len(entities),
+        "facts_cnt": len(facts),
+        "parse_error": None,
+    }
 
 
 def _mock_answer(question, evidence):
@@ -75,8 +106,6 @@ def main():
     if os.path.exists(STORE_PATH):
         os.remove(STORE_PATH)
     store = TemporalGraphStore(path=STORE_PATH)
-
-    from demo.synthetic_meetings import MEETINGS, DEMO_QUESTIONS
 
     with patch("core.pipeline.extract_from_transcript", side_effect=_mock_extract):
         print("=" * 70)
